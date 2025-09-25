@@ -1,5 +1,5 @@
 .mainHeading {
- font-size: 50px;
+  font-size: 50px;
   margin: 0 0 13px;
   color: #052515;
   font-family: 600;
@@ -11,4 +11,13 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .mainHeading {
+    font-size: 30px;
+    margin: 0 0 13px;
+    color: #052515;
+    font-family: 600;
+  }
 }

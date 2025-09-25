@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   z-index: 9;
 }
+
 /* 
 .mainBanner::after {
   content: "";
@@ -344,7 +345,7 @@
   z-index: 1;
 }
 
-.contactWrap::after {
+/* .contactWrap::after {
   content: "";
   position: absolute;
   top: 0;
@@ -354,7 +355,7 @@
   width: 575px;
   z-index: -1;
   border-radius: 40px 40px;
-}
+} */
 
 .form {
   max-width: 500px;
@@ -466,4 +467,112 @@
   font-size: 20px;
   font-weight: 600;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .mainBanner {
+    padding: 50px 0;
+  }
+
+  .mainBanner h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .bannerContent {
+    padding-right: 0;
+  }
+
+  .bannerButton {
+    gap: 10px;
+  }
+
+  .bannerRow {
+    flex-direction: column-reverse;
+  }
+
+  .bannerRight {
+    margin-bottom: 20px;
+  }
+
+  .aboutUs {
+    padding: 40px 0;
+  }
+
+  .aboutContent {
+    padding-left: 0;
+  }
+
+  .whyUs {
+    padding: 40px 0;
+  }
+
+  .whyContent h4 {
+    font-size: 26px;
+  }
+
+  .universities {
+    padding: 40px 0;
+  }
+
+  .eachCollege img {
+    height: 50px;
+  }
+
+  .guidence {
+    padding: 40px 0;
+  }
+
+  .eachGuidence h4 {
+    font-size: 24px;
+  }
+
+  .icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .icon img {
+    width: 30px;
+    height: 30px;
+  }
+  .serviceArea{
+    padding: 20px;
+    text-align: left;
+  }
+  .serviceArea .serviceHeading{
+    text-align: left;
+  }
+  .serviceArea ul{
+    grid-template-columns: auto;
+  }
+  .educationalJourney{
+    padding: 40px 0;
+  }
+  .contactWrap{
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .studentSupport{
+    padding: 40px 0;
+  }
+  .studentSupport .topSec{
+    padding-bottom: 0;
+  }
+  .faq{
+    padding: 40px 0;
+  }
+  .accordHeader{
+    padding: 20px 0 20px 50px;
+    column-gap: 0;
+  }
+  .accordTitle{
+    font-size: 20px;
+  }
+  .accordContent{
+    padding-left: 50px;
+  }
+   .accordContent p{
+    font-size: 16px;
+   }
 }

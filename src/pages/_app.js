@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import 'aos/dist/aos.css'   // 👈 Import AOS styles
 import { useEffect } from 'react'
 import AOS from 'aos'
+import BackToTop from '@/components/BackToTop/BackToTop'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -12,7 +13,11 @@ function MyApp({ Component, pageProps }) {
     })
   }, [])
 
-  return <Component {...pageProps} />
+  return (
+  <>
+    <Component {...pageProps} /> 
+    <BackToTop />
+  </>)
 }
 
 export default MyApp

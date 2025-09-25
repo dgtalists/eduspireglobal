@@ -154,7 +154,6 @@
   transition: color 0.3s;
   font-weight: 700;
   cursor: pointer;
-  opacity: 0.6;
 }
 
 .eachNav.active .eachNavMenu,
@@ -190,6 +189,7 @@
     padding: 10px 12px;
     width: 100%;
     display: block;
+    color: #fff;
     position: relative;
   }
 
@@ -283,9 +283,10 @@
     padding: 12px 0;
   }
 
-  .mainLogo img {
-    transition: transform 0.3s;
-    width: 100px;
+  
+
+  .contactBtn {
+    display: none;
   }
 
   .navContainer {

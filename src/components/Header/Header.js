@@ -116,52 +116,26 @@ const Header = () => {
               )}
               <div className={Styles.navWrap}>
                 <ul className={`${Styles.nav} justify-content-end`}>
+                
                   <li
                     className={`${Styles.eachNav} ${
-                      router.pathname === "/" ? Styles.active : ""
+                      router.pathname === "#about" ? Styles.active : ""
                     }`}
                   >
-                    <Link href="/" className={Styles.eachNavMenu}>
-                      Home
-                    </Link>
-                  </li>
-                  <li
-                    className={`${Styles.eachNav} ${
-                      router.pathname === "/about" ? Styles.active : ""
-                    }`}
-                  >
-                    <Link href="/about" className={Styles.eachNavMenu}>
+                    <Link href="#about" className={Styles.eachNavMenu}>
                       About Us
                     </Link>
                   </li>
                   <li
                     className={`${Styles.eachNav} ${
-                      router.pathname === "/service" ? Styles.active : ""
+                      router.pathname === "#service" ? Styles.active : ""
                     }`}
                   >
-                    <Link href="/service" className={Styles.eachNavMenu}>
+                    <Link href="#service" className={Styles.eachNavMenu}>
                       services
                     </Link>
                   </li>
-                  <li
-                    className={`${Styles.eachNav} ${
-                      router.pathname === "/Portfolio" ? Styles.active : ""
-                    }`}
-                  >
-                    <Link href="/Portfolio" className={Styles.eachNavMenu}>
-                      Portfolio
-                    </Link>
-                  </li>
-
-                  <li
-                    className={`${Styles.eachNav} ${
-                      router.pathname === "/articles" ? Styles.active : ""
-                    }`}
-                  >
-                    <Link href="/articles" className={Styles.eachNavMenu}>
-                      Articles
-                    </Link>
-                  </li>
+                  
                 </ul>
               </div>
             </div>

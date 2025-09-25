@@ -11,6 +11,7 @@ import { FaPlus, FaMinus } from "react-icons/fa"; // npm install react-icons
 import { HiMinus } from "react-icons/hi2";
 import { BsPlusLg } from "react-icons/bs";
 import Footer from "@/components/Footer/Footer";
+import HubspotEmbedForm from "@/components/HubspotEmbedForm/HubspotEmbedForm";
 
 export default function Home() {
   const colleges = [
@@ -92,14 +93,14 @@ export default function Home() {
         <div class={styles.bannerGraphics}>
           <img src="/images/bg-graphics.png" alt="bg-graphics" />
         </div>
-       
+
         <div className="container">
           <h1>
-            Expert Guidance for UK & 
+            Expert Guidance for UK &
             Ireland <span> University Admissions</span>
           </h1>
-          <div className="row align-items-center">
-            <div className="col-lg-7">
+          <div className={`row align-items-center ${styles.bannerRow}`}>
+            <div className="col-lg-7 order-lg-1">
               <div className={styles.bannerContent}>
 
                 <p>
@@ -126,7 +127,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-5">
+            <div className="col-lg-5 order-lg-0">
               <div className={styles.bannerRight}>
                 <img src="/images/bannerBg.jpg" alt="banner bg" />
               </div>
@@ -136,6 +137,7 @@ export default function Home() {
       </section>
       {/* ========about======= */}
       <section
+        id="about"
         className={styles.aboutUs}
         style={{ backgroundImage: `url("/images/about-bg.png")` }}
       >
@@ -224,7 +226,7 @@ export default function Home() {
               </div>
               <div className="col-lg-6">
                 <div className={styles.eachImg}>
-                  <img src="/images/whyus.svg" />
+                  <img src="/images/edi-img-4.png" />
                 </div>
               </div>
             </div>
@@ -245,7 +247,7 @@ export default function Home() {
               </div>
               <div className="col-lg-6">
                 <div className={styles.eachImg}>
-                  <img src="/images/whyus.svg" />
+                  <img src="/images/edi-img-1.png" />
                 </div>
               </div>
             </div>
@@ -267,7 +269,7 @@ export default function Home() {
               </div>
               <div className="col-lg-6">
                 <div className={styles.eachImg}>
-                  <img src="/images/whyus.svg" />
+                  <img src="/images/edi-img-2.png" />
                 </div>
               </div>
             </div>
@@ -293,7 +295,7 @@ export default function Home() {
               </div>
               <div className="col-lg-6">
                 <div className={styles.eachImg}>
-                  <img src="/images/whyus.svg" />
+                  <img src="/images/edi-img-3.png" />
                 </div>
               </div>
             </div>
@@ -326,7 +328,7 @@ export default function Home() {
       </section>
 
       {/* =======expert guidence====== */}
-      <section className={styles.guidence}>
+      <section id="service" className={styles.guidence}>
         <div className="container">
           <div className={styles.topSec}>
             <Subtitle text={"Our Guidance"} />
@@ -499,7 +501,7 @@ export default function Home() {
               </div>
               <div className="col-lg-6">
                 <div className={styles.formWrap}>
-                  <form className={styles.form}>
+                  {/* <form className={styles.form}>
                     <div className={styles.formGroup}>
                       <label htmlFor="firstName">First Name</label>
                       <input
@@ -537,7 +539,8 @@ export default function Home() {
                     </div>
 
                     <CommonButton text={'Submit'} />
-                  </form>
+                  </form> */}
+                  <HubspotEmbedForm />
                 </div>
 
               </div>

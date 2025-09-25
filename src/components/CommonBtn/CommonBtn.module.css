@@ -34,9 +34,11 @@
 .cmnBtn:hover::before {
     width: 100%;
 }
-.cmnBtn:hover{
+
+.cmnBtn:hover {
     color: #fff;
 }
+
 /* Arrow styles */
 .arrow {
     font-size: 20px;
@@ -49,4 +51,12 @@
 .cmnBtn:hover .arrow {
     transform: rotate(0deg);
     /* straight on hover */
+}
+
+
+@media (max-width: 768px) {
+    .cmnBtn {
+        padding: 10px 10px;
+        font-size: 14px;
+    }
 }

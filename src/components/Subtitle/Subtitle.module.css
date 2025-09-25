@@ -1,0 +1,14 @@
+.subtitle {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px 5px;
+    border-radius: 45px;
+    color: #183426;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1.5px solid transparent;
+    background-image: linear-gradient(#f3f9ff, #f3f9ff), linear-gradient(to right, #368ede 0%, #e27a19 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    margin: 0 0 15px;
+}

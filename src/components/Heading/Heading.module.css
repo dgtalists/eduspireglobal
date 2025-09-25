@@ -1,0 +1,14 @@
+.mainHeading {
+ font-size: 50px;
+  margin: 0 0 13px;
+  color: #052515;
+  font-family: 600;
+}
+
+.mainHeading span {
+  background: linear-gradient(97.23deg, #FED658 0%, #F8B018 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 600;
+}

@@ -1,0 +1,52 @@
+.cmnBtn {
+    padding: 13px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    /* background: linear-gradient(97.23deg, #FED658 0%, #F8B018 100%); */
+    background: #fff;
+    color: #815200;
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    text-transform: capitalize;
+    gap: 10px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.4s;
+    border: none;
+}
+
+.cmnBtn::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 500ms ease;
+    /* background: linear-gradient(97.23deg, #23d6f3 0%, #1485ec 100%); */
+    background: #1485ec;
+}
+
+.cmnBtn:hover::before {
+    width: 100%;
+}
+.cmnBtn:hover{
+    color: #fff;
+}
+/* Arrow styles */
+.arrow {
+    font-size: 20px;
+    display: inline-flex;
+    transition: transform 0.4s ease;
+    transform: rotate(-30deg);
+    /* default angled */
+}
+
+.cmnBtn:hover .arrow {
+    transform: rotate(0deg);
+    /* straight on hover */
+}

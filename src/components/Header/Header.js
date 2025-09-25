@@ -166,7 +166,7 @@ const Header = () => {
               </div>
             </div>
             <div className={Styles.contactBtn}>
-             <CommonButton text={'9147734848'} href="tel:9147734848" />
+             <CommonButton className={Styles.headerBtn} text={'9147734848'} href="tel:9147734848" />
             </div>
           </div>
         </div>

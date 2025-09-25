@@ -1,33 +1,36 @@
 .mainBanner {
   position: relative;
-  padding: 200px 0 120px;
+  padding: 80px 0 120px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 9;
 }
-
+/* 
 .mainBanner::after {
+  content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
   top: 0;
   left: 0;
-  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #226cf5;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  -webkit-transform: scaleX(2.1);
+  transform: scaleX(2.1);
   z-index: -1;
-}
+} */
 
 .bannerContent {
   position: relative;
   padding-right: 50px;
 }
 
-.bannerContent h1 {
-  font-size: 48px;
+.mainBanner h1 {
+  font-size: 58px;
   font-weight: 500;
-  color: #fff;
-  margin-bottom: 20px;
+  color: #121212;
+  margin-bottom: 30px;
 }
 
 /* .bannerContent h1 span {
@@ -40,7 +43,8 @@
 .bannerContent p {
   font-size: 18px;
   font-weight: 400;
-  color: #fff;
+  color: #121212;
+  margin-bottom: 5px;
 }
 
 .bannerButton {
@@ -52,10 +56,12 @@
 
 .bannerRight {
   position: relative;
-  background: #1f2020;
-  border: 1px solid #373737;
-  padding: 20px;
-  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.bannerRight img {
+  width: 100%;
 }
 
 .bannerRight h4 {
@@ -68,17 +74,34 @@
 .bannerRight p {
   font-size: 18px;
   font-weight: 400;
-  color: #fff;
+  color: #121212;
   margin-bottom: 20px;
 }
 
 .bannerRight span {
   font-size: 18px;
   font-weight: 400;
-  color: #fff;
+  color: #121212;
   margin-bottom: 20px;
 }
 
+.bannerGraphics {
+  position: absolute;
+  bottom: 60px;
+  right: 50px;
+}
+
+.bannerGraphicsOne {
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+.bannerGraphicsOne img,
+.bannerGraphics img {
+  height: 175px;
+  width: 175px;
+}
 
 /* ===========about us========= */
 .aboutUs {
@@ -235,16 +258,19 @@
   border-radius: 30px;
   position: relative;
 }
-.serviceArea .serviceHeading{
+
+.serviceArea .serviceHeading {
   text-align: center;
   color: #fff;
 }
-.serviceArea p{
-   font-size: 18px;
+
+.serviceArea p {
+  font-size: 18px;
   font-weight: 500;
   color: #fff;
 }
-.serviceArea  ul{
+
+.serviceArea ul {
   display: grid;
   grid-template-columns: auto auto auto;
   list-style: none;
@@ -252,10 +278,192 @@
   padding: 0;
   margin-top: 40px;
 }
-.serviceArea  ul li{
+
+.serviceArea ul li {
   background: #fff;
   padding: 12px 15px;
   border-radius: 12px;
   font-size: 18px;
   font-weight: 500;
+}
+
+/* ================educational guidence============== */
+.educationalJourney {
+  position: relative;
+  padding: 85px 0;
+}
+
+.journeyDetails p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.journeyImg {
+  width: 100%;
+  display: block;
+}
+
+.journeyImg img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.educationalJourney .row {
+  --bs-gutter-x: 50px;
+}
+
+.educationalJourney .row:nth-child(odd) {
+  flex-direction: row-reverse;
+  margin-bottom: 50px;
+}
+
+
+/* =================educationalJourney================ */
+.guidenceForm {
+  position: relative;
+  padding: 0 0 85px 0;
+}
+
+.contactGraphicsOne {
+  position: absolute;
+  bottom: 10px;
+  left: 70px;
+}
+
+.contactGraphicsTwo {
+  position: absolute;
+  top: 0;
+  right: 65px;
+}
+
+.contactWrap {
+  padding: 40px;
+  position: relative;
+  background: #f4f9ff;
+  border-radius: 40px;
+  z-index: 1;
+}
+
+.contactWrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #01016f;
+  height: 100%;
+  width: 575px;
+  z-index: -1;
+  border-radius: 40px 40px;
+}
+
+.form {
+  max-width: 500px;
+  margin-left: auto;
+}
+
+.eachInput {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  padding: 16px 20px;
+  color: #959595;
+  border: 1px solid #f1f1f1;
+  border-radius: 12px;
+  background: #fff;
+  width: 100%;
+}
+
+.eachInput:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.formGroup {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+/* ===================studentSupport======================= */
+.studentSupport {
+  position: relative;
+  text-align: center;
+  padding: 85px 0;
+}
+
+.studentSupport .topSec {
+  max-width: 100%;
+}
+
+/* =============faq================== */
+.faq {
+  position: relative;
+  padding: 85px 0;
+  background: #f3f9ff;
+}
+
+.faq .topSec {
+  text-align: center;
+}
+
+.accordWrap {
+  width: 100%;
+}
+
+.accordItem+.accordItem {
+  border-top: 1px solid #d4d4d4;
+}
+
+.accordHeader {
+  display: flex;
+  align-items: center;
+  column-gap: 200px;
+  padding: 30px 0 30px 180px;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordNumber {
+  color: #052515;
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.accordTitle {
+  flex: 1;
+  font-size: 28px;
+  color: #052515;
+  font-weight: 600;
+  margin: 0;
+}
+
+.accordIcon {
+  margin-left: 12px;
+  color: #052515;
+  font-size: 22px;
+}
+
+.accordContent {
+  padding-left: 180px;
+  padding-bottom: 30px;
+}
+
+.accordContent p {
+  width: 100%;
+  max-width: 958px;
+  color: #414141;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
 }

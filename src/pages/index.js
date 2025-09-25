@@ -6,6 +6,11 @@ import Header from "@/components/Header/Header";
 import CommonButton from "@/components/CommonBtn/CommonBtn";
 import Subtitle from "@/components/Subtitle/Subtitlle";
 import Heading from "@/components/Heading/Heading";
+import { useState } from "react";
+import { FaPlus, FaMinus } from "react-icons/fa"; // npm install react-icons
+import { HiMinus } from "react-icons/hi2";
+import { BsPlusLg } from "react-icons/bs";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   const colleges = [
@@ -25,6 +30,52 @@ export default function Home() {
     { img: "/images/belfast.jpg", name: "belfast" },
     { img: "/images/liverpool.png", name: "liverpool" },
   ];
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const faqs = [
+    {
+      q: "What are the basic eligibility criteria for admission to UK universities?",
+      a: "Most UK universities require completion of high school (12th grade), proof of English proficiency (IELTS/TOEFL), and relevant academic transcripts."
+    },
+    {
+      q: "How do I apply to UK universities from India?",
+      a: "You can apply directly through each university’s website or via the UCAS application system for undergraduate programs."
+    },
+    {
+      q: "What is the application deadline for UK universities?",
+      a: "Deadlines vary, but most undergraduate applications through UCAS close in January, and postgraduate deadlines depend on the university and course."
+    },
+    {
+      q: "Do UK universities accept three-year bachelor’s degrees from India for master’s programs?",
+      a: "Yes, most UK universities recognize three-year bachelor’s degrees (such as BA, BCom, BSc) awarded in India."
+    },
+    {
+      q: "What are the English language requirements for UK universities?",
+      a: "Acceptable tests include IELTS, TOEFL, PTE, or Duolingo. Minimum scores depend on the university and program."
+    },
+    {
+      q: "Can I work while studying in the UK?",
+      a: "Yes, international students can work up to 20 hours per week during term time and full-time during vacations."
+    },
+    {
+      q: "Are scholarships available for Indian students?",
+      a: "Many UK universities offer merit-based scholarships and financial aid for international students, including those from India."
+    },
+    {
+      q: "How do I arrange accommodation in the UK?",
+      a: "Universities usually provide guidance and options for both on-campus and off-campus housing."
+    },
+    {
+      q: "What is the Post-Study Work visa?",
+      a: "The Graduate Route allows international students to stay and work in the UK for up to 2 years after graduation."
+    },
+    {
+      q: "How do I obtain an education loan for studying in the UK?",
+      a: "Most major Indian banks and financial institutions offer education loans for studies at recognized UK universities."
+    }
+  ];
+  const toggle = (i) =>
+    setActiveIndex(activeIndex === i ? null : i);
   return (
     <>
       <Head>
@@ -37,16 +88,20 @@ export default function Home() {
       {/* =======banner======= */}
       <section
         className={styles.mainBanner}
-        style={{ backgroundImage: `url("/images/banner.jpg")` }}
       >
+        <div class={styles.bannerGraphics}>
+          <img src="/images/bg-graphics.png" alt="bg-graphics" />
+        </div>
+       
         <div className="container">
-          <div className="row">
+          <h1>
+            Expert Guidance for UK & 
+            Ireland <span> University Admissions</span>
+          </h1>
+          <div className="row align-items-center">
             <div className="col-lg-7">
               <div className={styles.bannerContent}>
-                <h1>
-                  Expert Guidance for UK & <br />
-                  Ireland <span> University Admissions</span>
-                </h1>
+
                 <p>
                   At Eduspire Global, we specialise in helping aspiring students
                   successfully secure admissions at leading universities in the
@@ -58,15 +113,6 @@ export default function Home() {
                   decisions and embark on your international education with
                   confidence.
                 </p>
-                <div className={styles.bannerButton}>
-                  <CommonButton text={"Start Your Application"} href="#" />
-                  <CommonButton text={"Speak to an Advisor"} href="#" />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-5">
-              <div className={styles.bannerRight}>
-                <h4>Let us help you</h4>
                 <p>
                   Meet our British Council Certified Counsellors who will
                   provide personalised Counselling sessions and Expert guidance
@@ -74,6 +120,15 @@ export default function Home() {
                   to avail the complimentary sessions.
                 </p>
                 <span>Call us for online appointment on 9147734848 </span>
+                <div className={styles.bannerButton}>
+                  <CommonButton className={styles.headerBtn} text={"Start Your Application"} href="#" />
+                  <CommonButton className={styles.headerBtn} text={"Speak to an Advisor"} href="#" />
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-5">
+              <div className={styles.bannerRight}>
+                <img src="/images/bannerBg.jpg" alt="banner bg" />
               </div>
             </div>
           </div>
@@ -372,6 +427,178 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* =======educational guidence====== */}
+      <section className={styles.educationalJourney}>
+        <div className="container">
+          <div className={`${"row align-items-center"} ${styles.row}`}>
+            <div className="col-lg-6">
+              <div className={styles.journeyDetails}>
+                <div className={styles.topSec}>
+                  <Subtitle text={"Education Journey"} />
+                  <Heading
+                    mainText={
+                      "Empowering Your Global Education Journey"
+                    }
+                  />
+                  <p>At Eduspire Global, we specialise in guiding aspiring students through every step of the university admissions process for the UK and Ireland. Our expert team offers personalised support, from course and university selection to financial advice, VISA application assistance, accommodation arrangements, and pre-departure orientation. With a student-focused approach, we ensure you are equipped with the right information and resources to make confident decisions about your future.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className={styles.journeyImg}>
+                <img src="/images/students.jpg" />
+              </div>
+            </div>
+          </div>
+          <div className={`${"row align-items-center"} ${styles.row}`}>
+            <div className="col-lg-6">
+              <div className={styles.journeyDetails}>
+                <div className={styles.topSec}>
+                  <Subtitle text={"Our Support "} />
+                  <Heading
+                    mainText={
+                      "Our Comprehensive Student Support Services"
+                    }
+                  />
+                  <p>At Eduspire Global, we specialise in guiding aspiring students through every stage of their academic journey to the UK and Ireland. Our expert team offers personalised support with course and university selection, ensuring you make choices that align with your ambitions. We also provide financial guidance, assist with VISA applications, and help secure suitable accommodation. From your initial enquiry to your arrival and orientation, EdusoireGlobal is committed to making your transition smooth and successful.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className={styles.journeyImg}>
+                <img src="/images/support.jpg" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ==============guidence Form============ */}
+      <section className={styles.guidenceForm}>
+        <div className={styles.contactGraphicsOne}>
+          <img src="/images/yellow.png" />
+        </div>
+        <div className={styles.contactGraphicsTwo}>
+          <img src="/images/contact-graphics.png" />
+        </div>
+        <div className="container">
+          <section className={styles.contactWrap}>
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div className={styles.topSec}>
+                  <Subtitle text={"Personalised Guidance"} />
+                  <Heading
+                    mainText={
+                      "Get Personalised Guidance for Your UK or Ireland University Journey"
+                    }
+                  />
+                  <p>Have questions about university admissions, course selection, or visa applications? Our experienced team at EdusoireGlobal is here to support you every step of the way. Fill out the form below and let us help you make the right choices for your future.</p>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className={styles.formWrap}>
+                  <form className={styles.form}>
+                    <div className={styles.formGroup}>
+                      <label htmlFor="firstName">First Name</label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        placeholder="Enter first name"
+                        className={styles.eachInput}
+                        required
+                      />
+                    </div>
+
+                    <div className={styles.formGroup}>
+                      <label htmlFor="lastName">Last Name</label>
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        placeholder="Enter last name"
+                        className={styles.eachInput}
+                        required
+                      />
+                    </div>
+
+                    <div className={styles.formGroup}>
+                      <label htmlFor="email">Email</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter email"
+                        className={styles.eachInput}
+                        required
+                      />
+                    </div>
+
+                    <CommonButton text={'Submit'} />
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      {/* ============student support========== */}
+      <section className={styles.studentSupport}>
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div className={styles.topSec}>
+                <Subtitle text={"Student Support"} />
+                <Heading
+                  mainText={
+                    "Comprehensive Student Support for UK & Ireland University Admissions"
+                  }
+                />
+                <p>At Eduspire Global, we specialise in guiding aspiring students through every stage of the university admission process in the UK and Ireland. Our expert team offers personalised assistance with course and university selection, ensuring that each student chooses the path best suited to their ambitions and interests. We provide comprehensive financial guidance, support with VISA applications, and advice on securing accommodation. From initial orientation to settling in, EduspireGlobal is committed to making your international education journey seamless and successful.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==============faq=================== */}
+      <section className={styles.faq}>
+        <div className="container">
+          <div className={styles.topSec}>
+            <Subtitle text={"Quick Answer"} />
+            <Heading
+              mainText={
+                "Frequently Asked Questions"
+              }
+            />
+          </div>
+          <div className={styles.accordWrap}>
+            {faqs.map((item, i) => (
+              <div key={i} className={styles.accordItem}>
+                <div className={styles.accordHeader} onClick={() => toggle(i)}>
+                  <span className={styles.accordNumber}>{i + 1}</span>
+                  <span className={styles.accordTitle}>{item.q}</span>
+                  <span className={styles.accordIcon}>
+                    {activeIndex === i ? <HiMinus /> : <BsPlusLg />}
+                  </span>
+                </div>
+                {activeIndex === i && (
+                  <div className={styles.accordContent}>
+                    <p>{item.a}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+
     </>
   );
 }

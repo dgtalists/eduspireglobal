@@ -5,9 +5,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 9;
+  background-color: #F3F9FF;
 }
 
-
+/* 
 .mainBanner::after {
   content: "";
   position: absolute;
@@ -15,16 +16,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: linear-gradient(to left, #E5FFF3 0%, #e0f1ff 30%, #FDF2EF 100%);;
+  background-color: #226cf5;
   border-radius: 0 0 50% 50% / 0 0 100% 100%;
   -webkit-transform: scaleX(2.1);
   transform: scaleX(2.1);
   z-index: -1;
-}
+} */
 
 .bannerContent {
   position: relative;
   padding-right: 50px;
+  text-align: center;
 }
 
 .mainBanner h1 {
@@ -41,49 +43,42 @@
   color: transparent;
   text-shadow: none;
 } */
-.bannerContent p {
-  font-size: 18px;
-  font-weight: 400;
-  color: #121212;
-  margin-bottom: 5px;
+/* styles.module.css */
+.breadcrumbWrapper {
+  margin-top: 10px;
+  text-align: center;
+  /* spacing below the heading */
 }
 
-.bannerButton {
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  font-size: 0.95rem;
+  list-style: none;
+}
+
+.breadcrumbItem,
+.breadcrumbItem a {
   position: relative;
-  display: inline-flex;
-  gap: 20;
-  margin-top: 20px;
-}
-
-.bannerRight {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-.bannerRight img {
-  width: 100%;
-}
-
-.bannerRight h4 {
-  font-size: 30px;
-  color: #368ede;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
-.bannerRight p {
+  display: inline-block;
+  z-index: 1;
+  font-weight: 600;
   font-size: 18px;
-  font-weight: 400;
   color: #121212;
-  margin-bottom: 20px;
+
 }
 
-.bannerRight span {
-  font-size: 18px;
-  font-weight: 400;
-  color: #121212;
-  margin-bottom: 20px;
+.chevron {
+  margin: 0 10px;
+}
+
+.breadcrumbItem a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbItem.active {
+  color: #6c757d;
+  /* current page color */
 }
 
 .bannerGraphics {
@@ -264,17 +259,7 @@
   text-align: center;
   color: #fff;
 }
-.whatWeOffer {
-  padding: 85px 0 0;
-  position: relative;
-}
-.whatWeRight {
-  position: relative;
-  border-radius: 12px;
-  background: #fff;
-  border: 1px solid #bac7d5;
-  overflow: hidden;
-}
+
 .serviceArea p {
   font-size: 18px;
   font-weight: 500;
@@ -297,111 +282,7 @@
   font-size: 18px;
   font-weight: 500;
 }
-.serviceLeft ul {
-  padding: 0;
-  display: grid;
-  grid-template-columns: auto;
-  gap: 15px;
-}
 
-.serviceLeft h5 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: #052515;
-}
-
-.serviceLeft ul li {
-  color: #414141;
-  /* margin: 0 0 22px; */
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 26px;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #fff;
-}
-
-.serviceIcon {
-  width: 70px;
-  height: 70px;
-  background: #f1f1f1;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 auto;
-}
-.serviceIcon img{
-  width: 40px;
-  height:40px;
-}
-
-.serviceLeft ul li svg {
-  font-size: 30px;
-  width: 30px;
-  height: 30px;
-}
-
-.serviceLeft ul li:hover {
-  box-shadow: 0 0 10px 0;
-}
-
-.hatImg {
-  position: absolute;
-  left: 100%;
-  top: 0px;
-  margin-left: -105px;
-  width: 150px;
-}
-
-.rightImg {
-  width: 100%;
-}
-
-.serviceRight {
-  text-align: right;
-}
-
-.eachService {
-  background: #FFF;
-  border: #BAC7D5 1px solid;
-  border-radius: 20px;
-  padding: 30px;
-  height: calc(100% - 20px);
-  margin-bottom: 20px;
-  transition: all 0.3s ease-in;
-}
-
-.eachService h5 {
-  color: #414141;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1.6em;
-  margin: 0;
-}
-
-.serviceLeft {
-  padding-top: 50px;
-}
-
-.serviceLeft .topSec {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.shape{
-  position: absolute;
-  top: 50%;
-  transform: translateX(-50%);
-  left: 0;
-  width: 400px;
-    opacity: 0.4;
-}
 /* ================educational guidence============== */
 .educationalJourney {
   position: relative;
@@ -436,7 +317,7 @@
 /* =================educationalJourney================ */
 .guidenceForm {
   position: relative;
-  padding: 0 0 85px 0;
+  padding: 85PX 0 85px 0;
 }
 
 .contactGraphicsOne {

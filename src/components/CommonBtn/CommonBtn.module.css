@@ -4,7 +4,7 @@
     font-weight: 600;
     border-radius: 12px;
     /* background: linear-gradient(97.23deg, #FED658 0%, #F8B018 100%); */
-    background: #1485ec;
+    background: #273474;
     color: #fff;
     text-decoration: none;
     position: relative;
@@ -28,7 +28,7 @@
     z-index: -1;
     transition: all 500ms ease;
     /* background: linear-gradient(97.23deg, #23d6f3 0%, #1485ec 100%); */
-    background: #1485ec;
+    background: #b42126;
 }
 
 .cmnBtn:hover::before {

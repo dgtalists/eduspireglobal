@@ -5,9 +5,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 9;
+  background-color: #F3F9FF;
 }
 
-
+/* 
 .mainBanner::after {
   content: "";
   position: absolute;
@@ -15,16 +16,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: linear-gradient(to left, #E5FFF3 0%, #e0f1ff 30%, #FDF2EF 100%);;
+  background-color: #226cf5;
   border-radius: 0 0 50% 50% / 0 0 100% 100%;
   -webkit-transform: scaleX(2.1);
   transform: scaleX(2.1);
   z-index: -1;
-}
+} */
 
 .bannerContent {
   position: relative;
   padding-right: 50px;
+  text-align: center;
 }
 
 .mainBanner h1 {
@@ -41,49 +43,42 @@
   color: transparent;
   text-shadow: none;
 } */
-.bannerContent p {
-  font-size: 18px;
-  font-weight: 400;
-  color: #121212;
-  margin-bottom: 5px;
+/* styles.module.css */
+.breadcrumbWrapper {
+  margin-top: 10px;
+  text-align: center;
+  /* spacing below the heading */
 }
 
-.bannerButton {
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  font-size: 0.95rem;
+  list-style: none;
+}
+
+.breadcrumbItem,
+.breadcrumbItem a {
   position: relative;
-  display: inline-flex;
-  gap: 20;
-  margin-top: 20px;
-}
-
-.bannerRight {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-.bannerRight img {
-  width: 100%;
-}
-
-.bannerRight h4 {
-  font-size: 30px;
-  color: #368ede;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
-.bannerRight p {
+  display: inline-block;
+  z-index: 1;
+  font-weight: 600;
   font-size: 18px;
-  font-weight: 400;
   color: #121212;
-  margin-bottom: 20px;
+
 }
 
-.bannerRight span {
-  font-size: 18px;
-  font-weight: 400;
-  color: #121212;
-  margin-bottom: 20px;
+.chevron {
+  margin: 0 10px;
+}
+
+.breadcrumbItem a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbItem.active {
+  color: #6c757d;
+  /* current page color */
 }
 
 .bannerGraphics {
@@ -181,7 +176,7 @@
 
 .topSec {
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -264,17 +259,7 @@
   text-align: center;
   color: #fff;
 }
-.whatWeOffer {
-  padding: 85px 0 0;
-  position: relative;
-}
-.whatWeRight {
-  position: relative;
-  border-radius: 12px;
-  background: #fff;
-  border: 1px solid #bac7d5;
-  overflow: hidden;
-}
+
 .serviceArea p {
   font-size: 18px;
   font-weight: 500;
@@ -283,7 +268,7 @@
 
 .serviceArea ul {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   list-style: none;
   gap: 15px;
   padding: 0;
@@ -297,6 +282,33 @@
   font-size: 18px;
   font-weight: 500;
 }
+
+.whatWeOffer {
+  padding: 85px 0;
+  position: relative;
+}
+
+.whatWeRight {
+  position: relative;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #bac7d5;
+  overflow: hidden;
+}
+
+.whatWeRight h5 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #121212;
+  margin-bottom: 15px;
+}
+
+.serviceWeProvide {
+  position: relative;
+  padding: 85px 0 0;
+  background-color: #f6f5ef78;
+}
+
 .serviceLeft ul {
   padding: 0;
   display: grid;
@@ -402,6 +414,10 @@
   width: 400px;
     opacity: 0.4;
 }
+
+
+
+
 /* ================educational guidence============== */
 .educationalJourney {
   position: relative;
@@ -436,7 +452,7 @@
 /* =================educationalJourney================ */
 .guidenceForm {
   position: relative;
-  padding: 0 0 85px 0;
+  padding: 85PX 0 85px 0;
 }
 
 .contactGraphicsOne {
@@ -650,43 +666,55 @@
     width: 30px;
     height: 30px;
   }
-  .serviceArea{
+
+  .serviceArea {
     padding: 20px;
     text-align: left;
   }
-  .serviceArea .serviceHeading{
+
+  .serviceArea .serviceHeading {
     text-align: left;
   }
-  .serviceArea ul{
+
+  .serviceArea ul {
     grid-template-columns: auto;
   }
-  .educationalJourney{
+
+  .educationalJourney {
     padding: 40px 0;
   }
-  .contactWrap{
+
+  .contactWrap {
     padding: 20px;
     border-radius: 20px;
   }
-  .studentSupport{
+
+  .studentSupport {
     padding: 40px 0;
   }
-  .studentSupport .topSec{
+
+  .studentSupport .topSec {
     padding-bottom: 0;
   }
-  .faq{
+
+  .faq {
     padding: 40px 0;
   }
-  .accordHeader{
+
+  .accordHeader {
     padding: 20px 0 20px 50px;
     column-gap: 0;
   }
-  .accordTitle{
+
+  .accordTitle {
     font-size: 20px;
   }
-  .accordContent{
+
+  .accordContent {
     padding-left: 50px;
   }
-   .accordContent p{
+
+  .accordContent p {
     font-size: 16px;
-   }
+  }
 }

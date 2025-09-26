@@ -77,6 +77,46 @@ export default function Home() {
   ];
   const toggle = (i) =>
     setActiveIndex(activeIndex === i ? null : i);
+  const service = [
+    {
+      id: 1,
+      text: "Initial consultation and profile assessment",
+      icon: "/images/interview.png",
+      bgColor: "#FFEAD7"   // orange
+    },
+    {
+      id: 2,
+      text: "Personalised university and course shortlisting",
+      icon: "/images/education.png",
+      bgColor: "#D5F6E3"   // blue
+    },
+    {
+      id: 3,
+      text: "Application guidance for universities",
+      icon: "/images/design-resources.png",
+      bgColor: "#E4E0FF"   // green
+    },
+    {
+      id: 4,
+      text: "Personalised support throughout the process",
+      icon: "/images/support.png",
+      bgColor: "#FFF7CE"   // purple
+    },
+    {
+      id: 5,
+      text: "Complete VISA assistance",
+      icon: "/images/travel-visa.png",
+      bgColor: "#FFD7D8"   // yellow
+    },
+    {
+      id: 6,
+      text: "Building connections with ALUMNI",
+      icon: "/images/alumni.png",
+      bgColor: "#f3f9ff"   // red
+    }
+  ];
+
+
   return (
     <>
       <Head>
@@ -100,7 +140,7 @@ export default function Home() {
             Ireland <span> University Admissions</span>
           </h1>
           <div className={`row align-items-center ${styles.bannerRow}`}>
-            <div className="col-lg-7 order-lg-1">
+            <div className="col-lg-7 ">
               <div className={styles.bannerContent}>
 
                 <p>
@@ -127,7 +167,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-5 order-lg-0">
+            <div className="col-lg-5 ">
               <div className={styles.bannerRight}>
                 <img src="/images/bannerBg.jpg" alt="banner bg" />
               </div>
@@ -307,7 +347,7 @@ export default function Home() {
       <section className={styles.universities}>
         <div className="container">
           <div className={styles.topSec}>
-            <Subtitle text={"Our Partner"} />
+            <Subtitle text={"Top Universities"} />
             <Heading mainText={"Some of the Universities We Represent"} />
             <p>
               Eduspire Global is dedicated to supporting aspiring students
@@ -392,40 +432,72 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div
-            className={styles.serviceArea}
-            style={{ backgroundImage: `url("/images/green-bg-shape.png")` }}
-          >
-            <Subtitle text={"Our Service"} />
-            <Heading
-              className={styles.serviceHeading}
-              mainText={"Our service is recognised by British Council"}
-            />
-            <p>
-              Experience our unified support solution—designed to empower you at
-              every stage of your journey. This comprehensive offering combines
-              proactive guidance, personalised support, and exemplary service
-              into one seamless experience. Our certified counsellors,
-              accredited by the British Council, provide expert assistance from
-              initial onboarding through ongoing optimisation. This ensures you
-              receive, adopt, utilise, and benefit from the Eduspire Global
-              approach. Benefit from direct access to industry specialists,
-              tailored strategic advice, and priority access to advanced
-              resources and troubleshooting. Our dedicated team partners with
-              you to address evolving needs, integrated approach, continuous
-              support, and strategic recommendations to achieve your goal. With
-              this all-in-one service, you move forward knowing you have the
-              full strength of Eduspire Global behind you—supporting, guiding,
-              and helping you achieve your goals every step of the way.
-            </p>
-            <ul>
-              <li>Initial consultation and profile assessment</li>
-              <li>Personalised university and course shortlisting</li>
-              <li>Application guidance for universities</li>
-              <li>Personalised support throughout the process</li>
-              <li>Complete VISA assistance</li>
-              <li>Building connections with ALUMNI</li>
-            </ul>
+         
+        </div>
+      </section>
+
+      {/* ========what we offer=========== */}
+      <section className={styles.whatWeOffer}>
+        <img className={styles.hatImg} src="/images/hat.png" alt="hat" />
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-7">
+              <div className={styles.whatWeOfferLeft}>
+                <div className={styles.topSec}>
+                  <Subtitle text={"Our Service"} />
+                  <Heading
+                    className={styles.serviceHeading}
+                    mainText={"Our service is recognised by  British Council"}
+                  />
+                  <p>
+                    Experience our unified support solution—designed to empower you at
+                    every stage of your journey. This comprehensive offering combines
+                    proactive guidance, personalised support, and exemplary service
+                    into one seamless experience. Our certified counsellors,
+                    accredited by the British Council, provide expert assistance from
+                    initial onboarding through ongoing optimisation. This ensures you
+                    receive, adopt, utilise, and benefit from the Eduspire Global
+                    approach. Benefit from direct access to industry specialists,
+                    tailored strategic advice, and priority access to advanced
+                    resources and troubleshooting. Our dedicated team partners with
+                    you to address evolving needs, integrated approach, continuous
+                    support, and strategic recommendations to achieve your goal. With
+                    this all-in-one service, you move forward knowing you have the
+                    full strength of Eduspire Global behind you—supporting, guiding,
+                    and helping you achieve your goals every step of the way.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-5">
+              <div className={styles.whatWeRight}>
+                <img className={styles.rightImg} src="/images/img3.jpg" alt="hat" />
+              </div>
+            </div>
+          </div>
+          <div className={styles.serviceLeft}>
+            <img src="/images/54.png" className={styles.shape} />
+            <div className={styles.topSec}>
+              <Subtitle text={"Our Service"} />
+              <Heading
+                className={styles.serviceHeading}
+                mainText={"How We Help"}
+              />
+            </div>
+            <div className="row">
+              {service.map((item, index) => (
+                <div key={index} className="col-lg-4 col-md-4 col-sm-12">
+                  <div className={styles.eachService} key={item.id}>
+                    <span className={styles.serviceIcon} style={{ background: item.bgColor }}> <img
+                      src={item.icon}
+                      alt={item.text}
+
+                    /></span>
+                    <h5>{item.text}</h5>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

@@ -85,7 +85,7 @@ const Header = () => {
               <Link href="/" className={Styles.mainLogo}>
                 <img
                   className={Styles.mainLogoImg}
-                  src={"/images/logo.png"}
+                  src={"/images/headerlogo.png"}
                   alt="logo"
                 />
               </Link>
@@ -119,20 +119,38 @@ const Header = () => {
                 
                   <li
                     className={`${Styles.eachNav} ${
-                      router.pathname === "#about" ? Styles.active : ""
+                      router.pathname === "/about" ? Styles.active : ""
                     }`}
                   >
-                    <Link href="#about" className={Styles.eachNavMenu}>
+                    <Link href="/about" className={Styles.eachNavMenu}>
                       About Us
                     </Link>
                   </li>
                   <li
                     className={`${Styles.eachNav} ${
-                      router.pathname === "#service" ? Styles.active : ""
+                      router.pathname === "/whyuk" ? Styles.active : ""
                     }`}
                   >
-                    <Link href="#service" className={Styles.eachNavMenu}>
-                      services
+                    <Link href="/whyuk" className={Styles.eachNavMenu}>
+                      Why UK
+                    </Link>
+                  </li>
+                  <li
+                    className={`${Styles.eachNav} ${
+                      router.pathname === "/what-we-offer" ? Styles.active : ""
+                    }`}
+                  >
+                    <Link href="/what-we-offer" className={Styles.eachNavMenu}>
+                      what We Offer
+                    </Link>
+                  </li>
+                  <li
+                    className={`${Styles.eachNav} ${
+                      router.pathname === "/financial-guidance" ? Styles.active : ""
+                    }`}
+                  >
+                    <Link href="/financial-guidance" className={Styles.eachNavMenu}>
+                      FInancial Guidance
                     </Link>
                   </li>
                   

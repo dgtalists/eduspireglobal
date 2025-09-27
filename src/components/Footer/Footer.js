@@ -14,13 +14,28 @@ export default function Footer() {
           <nav className={styles.footer_nav}>
             <ul>
               <li className={styles.eachNav}>
-                <Link href="#service" className={styles.eachNavMenu}>
-                  Services
+                <Link href="/" className={styles.eachNavMenu}>
+                  Home
                 </Link>
               </li>
               <li className={styles.eachNav}>
-                <Link href="/About" className={styles.eachNavMenu}>
+                <Link href="/about" className={styles.eachNavMenu}>
                   About
+                </Link>
+              </li>
+              <li className={styles.eachNav}>
+                <Link href="/whyuk" className={styles.eachNavMenu}>
+                  Why UK
+                </Link>
+              </li>
+              <li className={styles.eachNav}>
+                <Link href="/what-we-offer" className={styles.eachNavMenu}>
+                  What  We Offer
+                </Link>
+              </li>
+               <li className={styles.eachNav}>
+                <Link href="/financial-guidance" className={styles.eachNavMenu}>
+                  Financial Guidance
                 </Link>
               </li>
             </ul>

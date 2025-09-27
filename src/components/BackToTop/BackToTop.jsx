@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa"; // npm install react-icons
 import styles from "./BackToTop.module.css";
+import { BsArrowBarUp, BsArrowUp } from "react-icons/bs";
 
 export default function BackToTop() {
   const [visible, setVisible] = useState(false);
@@ -27,7 +28,7 @@ export default function BackToTop() {
         className={styles.backToTop}
         aria-label="Back to top"
       >
-        <FaArrowUp />
+        <BsArrowUp/>
       </button>
     )
   );

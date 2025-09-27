@@ -147,7 +147,7 @@
   flex-direction: row-reverse;
 }
 .whyContent ul{
-  padding: 0;
+  padding-left: 15px;
 }
 
 /*==========universities======= */

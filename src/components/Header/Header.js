@@ -116,7 +116,15 @@ const Header = () => {
               )}
               <div className={Styles.navWrap}>
                 <ul className={`${Styles.nav} justify-content-end`}>
-                
+                  <li
+                    className={`${Styles.eachNav} ${
+                      router.pathname === "/" ? Styles.active : ""
+                    }`}
+                  >
+                    <Link href="/" className={Styles.eachNavMenu}>
+                      Home
+                    </Link>
+                  </li>
                   <li
                     className={`${Styles.eachNav} ${
                       router.pathname === "/about" ? Styles.active : ""
@@ -146,19 +154,27 @@ const Header = () => {
                   </li>
                   <li
                     className={`${Styles.eachNav} ${
-                      router.pathname === "/financial-guidance" ? Styles.active : ""
+                      router.pathname === "/financial-guidance"
+                        ? Styles.active
+                        : ""
                     }`}
                   >
-                    <Link href="/financial-guidance" className={Styles.eachNavMenu}>
+                    <Link
+                      href="/financial-guidance"
+                      className={Styles.eachNavMenu}
+                    >
                       FInancial Guidance
                     </Link>
                   </li>
-                  
                 </ul>
               </div>
             </div>
             <div className={Styles.contactBtn}>
-             <CommonButton className={Styles.headerBtn} text={'9147734848'} href="tel:9147734848" />
+              <CommonButton
+                className={Styles.headerBtn}
+                text={"9147734848"}
+                href="tel:9147734848"
+              />
             </div>
           </div>
         </div>

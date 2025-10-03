@@ -169,6 +169,7 @@ export default function About() {
                                     students throughout the entire process of admission,
                                     scholarship, accommodation, visa and pre-departure session.
                                 </p>
+                                <CommonButton className={styles.headerBtn} text={"Contact Us"} onClick={() => setOpen(true)} href="" />
                             </div>
                         </div>
                     </div>
@@ -196,7 +197,7 @@ export default function About() {
                                     <img src="/images/library.png" />
                                 </div>
                                 <h4>Global University Tie Ups</h4>
-                               <h3>50+</h3>
+                                <h3>50+</h3>
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -226,31 +227,31 @@ export default function About() {
                     </div>
                 </div>
             </section>
- {/* ==============guidence Form============ */}
-      <section className={styles.guidenceForm}>
-        <div className={styles.contactGraphicsOne}>
-          <img src="/images/yellow.png" />
-        </div>
-        <div className={styles.contactGraphicsTwo}>
-          <img src="/images/contact-graphics.png" />
-        </div>
-        <div className="container">
-          <section className={styles.contactWrap}>
-            <div className="row align-items-center">
-              <div className="col-lg-6">
-                <div className={styles.topSec}>
-                  <Subtitle text={"Personalised Guidance"} />
-                  <Heading
-                    mainText={
-                      "Get Personalised Guidance for Your UK or Ireland University Journey"
-                    }
-                  />
-                  <p>Have questions about university admissions, course selection, or visa applications? Our experienced team at EdusoireGlobal is here to support you every step of the way. Fill out the form below and let us help you make the right choices for your future.</p>
+            {/* ==============guidence Form============ */}
+            <section className={styles.guidenceForm}>
+                <div className={styles.contactGraphicsOne}>
+                    <img src="/images/yellow.png" />
                 </div>
-              </div>
-              <div className="col-lg-6">
-                <div className={styles.formWrap}>
-                  {/* <form className={styles.form}>
+                <div className={styles.contactGraphicsTwo}>
+                    <img src="/images/contact-graphics.png" />
+                </div>
+                <div className="container">
+                    <section className={styles.contactWrap}>
+                        <div className="row align-items-center">
+                            <div className="col-lg-6">
+                                <div className={styles.topSec}>
+                                    <Subtitle text={"Personalised Guidance"} />
+                                    <Heading
+                                        mainText={
+                                            "Get Personalised Guidance for Your UK or Ireland University Journey"
+                                        }
+                                    />
+                                    <p>Have questions about university admissions, course selection, or visa applications? Our experienced team at EdusoireGlobal is here to support you every step of the way. Fill out the form below and let us help you make the right choices for your future.</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className={styles.formWrap}>
+                                    {/* <form className={styles.form}>
                     <div className={styles.formGroup}>
                       <label htmlFor="firstName">First Name</label>
                       <input
@@ -289,14 +290,14 @@ export default function About() {
 
                     <CommonButton text={'Submit'} />
                   </form> */}
-                  <HubspotEmbedForm />
-                </div>
+                                    <HubspotEmbedForm />
+                                </div>
 
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
 
 
             <Footer />

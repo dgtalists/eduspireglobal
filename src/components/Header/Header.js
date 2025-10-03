@@ -8,6 +8,10 @@ import { useEffect, useRef, useState } from "react";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 import Styles from "./Header.module.css";
 import CommonButton from "../CommonBtn/CommonBtn";
+import { HiOutlineEnvelope } from "react-icons/hi2";
+import { VscCallOutgoing } from "react-icons/vsc";
+import { FaFacebook, FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -76,6 +80,34 @@ const Header = () => {
   }, []);
   return (
     <>
+      <div className={Styles.topHeader}>
+        <div className="container">
+          <div className={Styles.topHeaderWrap}>
+            <div className={Styles.topHeaderLeft}>
+              <ul>
+                <li><HiOutlineEnvelope />
+                  <a href="mailto:info@eduspireglobal.com">info@eduspireglobal.com
+                  </a></li>
+                <li> <VscCallOutgoing />
+                  <a href="tel:9147734848">9147734848</a></li>
+              </ul>
+
+            </div>
+            <div className={Styles.topHeaderRight}>
+              <ul>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <FaFacebookF />
+                  </a>
+                  </li>
+                  <li><a href="#" target="_blank"><FaTwitter /></a></li>
+                  <li><a href="#" target="_blank"><FaLinkedinIn /></a></li>
+                  <li><a href="#" target="_blank"><FaInstagram /></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <header
         className={`${Styles.main_header} ${isSticky ? Styles.sticky : ""}`}
       >
@@ -100,9 +132,8 @@ const Header = () => {
             </div>
             <div
               ref={menuRef}
-              className={` ${Styles.navContainer} ${
-                isOpen ? Styles.showNav : Styles.hideNav
-              }`}
+              className={` ${Styles.navContainer} ${isOpen ? Styles.showNav : Styles.hideNav
+                }`}
             >
               {isOpen && (
                 <div className={Styles.closeNav}>
@@ -117,65 +148,96 @@ const Header = () => {
               <div className={Styles.navWrap}>
                 <ul className={`${Styles.nav} justify-content-end`}>
                   <li
-                    className={`${Styles.eachNav} ${
-                      router.pathname === "/" ? Styles.active : ""
-                    }`}
+                    className={`${Styles.eachNav} ${router.pathname === "/" ? Styles.active : ""
+                      }`}
                   >
                     <Link href="/" className={Styles.eachNavMenu}>
                       Home
                     </Link>
                   </li>
                   <li
-                    className={`${Styles.eachNav} ${
-                      router.pathname === "/about" ? Styles.active : ""
-                    }`}
+                    className={`${Styles.eachNav} ${router.pathname === "/about" ? Styles.active : ""
+                      }`}
                   >
                     <Link href="/about" className={Styles.eachNavMenu}>
                       About Us
                     </Link>
                   </li>
                   <li
-                    className={`${Styles.eachNav} ${
-                      router.pathname === "/whyuk" ? Styles.active : ""
-                    }`}
+                    className={`${Styles.eachNav} ${router.pathname === "/whyuk" ? Styles.active : ""
+                      }`}
                   >
                     <Link href="/whyuk" className={Styles.eachNavMenu}>
                       Why UK
                     </Link>
                   </li>
                   <li
-                    className={`${Styles.eachNav} ${
-                      router.pathname === "/what-we-offer" ? Styles.active : ""
-                    }`}
+                    className={`${Styles.eachNav} ${router.pathname === "/what-we-offer" ? Styles.active : ""
+                      }`}
                   >
                     <Link href="/what-we-offer" className={Styles.eachNavMenu}>
                       what We Offer
                     </Link>
                   </li>
                   <li
-                    className={`${Styles.eachNav} ${
-                      router.pathname === "/financial-guidance"
-                        ? Styles.active
-                        : ""
-                    }`}
+                    className={`${Styles.eachNav} ${router.pathname.startsWith("/financial-guidance")
+                      ? Styles.active
+                      : ""
+                      }`}
+                    onMouseEnter={() => !isMobile && setActiveMenu("financial-guidance")}
+                    onMouseLeave={() => !isMobile && setActiveMenu(null)}
                   >
-                    <Link
-                      href="/financial-guidance"
-                      className={Styles.eachNavMenu}
+                    <span
+                      className={`${Styles.eachNavMenu} ${Styles.dropdownToggle}`}
+                      onClick={() =>
+                        isMobile &&
+                        setActiveMenu(
+                          activeMenu === "financial-guidance" ? null : "financial-guidance"
+                        )
+                      }
                     >
-                      FInancial Guidance
+                      Financial Guidance
+                    </span>
+
+                    {/* Submenu */}
+                    {activeMenu === "financial-guidance" && (
+                      <ul ref={megaMenuRef} className={Styles.subMenu}>
+                        <li>
+                          <Link href="/financial-guidance/bank-loans">Bank Loans</Link>
+                        </li>
+                        <li>
+                          <Link href="/financial-guidance/scholarships">Scholarships</Link>
+                        </li>
+                      </ul>
+                    )}
+                  </li>
+                  <li
+                    className={`${Styles.eachNav} ${router.pathname === "/media" ? Styles.active : ""
+                      }`}
+                  >
+                    <Link href="/media" className={Styles.eachNavMenu}>
+                      Media
                     </Link>
                   </li>
+                  <li
+                    className={`${Styles.eachNav} ${router.pathname === "#" ? Styles.active : ""
+                      }`}
+                  >
+                    <Link href="#" className={Styles.eachNavMenu}>
+                      Events
+                    </Link>
+                  </li>
+
                 </ul>
               </div>
             </div>
-            <div className={Styles.contactBtn}>
+            {/* <div className={Styles.contactBtn}>
               <CommonButton
                 className={Styles.headerBtn}
                 text={"9147734848"}
                 href="tel:9147734848"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </header>

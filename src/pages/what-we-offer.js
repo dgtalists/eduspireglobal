@@ -18,8 +18,12 @@ import { HiMinus, HiOutlineChevronRight } from "react-icons/hi2";
 import { PiUserCircleCheck } from "react-icons/pi";
 import Footer from "@/components/Footer/Footer";
 import HubspotEmbedForm from "@/components/HubspotEmbedForm/HubspotEmbedForm";
+import Modal from "@/components/Modal/Modal";
+import CommonButton from "@/components/CommonBtn/CommonBtn";
 
 export default function WhatWeOffer() {
+  const [open, setOpen] = useState(false);
+
   const service = [
     {
       id: 1,
@@ -108,10 +112,12 @@ export default function WhatWeOffer() {
           </div>
         </div>
       </section>
-
+      <Modal isOpen={open} onClose={() => setOpen(false)}>
+        <HubspotEmbedForm />
+      </Modal>
       {/* ========what we offer=========== */}
       <section className={styles.whatWeOffer}>
-        <img className={styles.hatImg} src="/images/hat.png" alt="hat" />
+        {/* <img className={styles.hatImg} src="/images/hat.png" alt="hat" /> */}
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-7">
@@ -141,6 +147,7 @@ export default function WhatWeOffer() {
                     you—supporting, guiding, and helping you achieve your goals
                     every step of the way.
                   </p>
+                  <CommonButton className={styles.headerBtn} text={"Contact Us"} onClick={() => setOpen(true)} href="" />
                 </div>
               </div>
             </div>
@@ -155,7 +162,7 @@ export default function WhatWeOffer() {
             </div>
           </div>
           <div className={styles.serviceLeft}>
-            <img src="/images/54.png" className={styles.shape} />
+            {/* <img src="/images/54.png" className={styles.shape} /> */}
             <div className={styles.topSec}>
               <Subtitle text={"Our Service"} />
               <Heading
@@ -178,6 +185,9 @@ export default function WhatWeOffer() {
                   </div>
                 </div>
               ))}
+            </div>
+            <div className={styles.bottomBtn}>
+              <CommonButton className={styles.headerBtn} text={"Contact for More"} onClick={() => setOpen(true)} href="" />
             </div>
           </div>
         </div>

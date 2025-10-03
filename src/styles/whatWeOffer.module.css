@@ -102,7 +102,7 @@
 /* ===========about us========= */
 .aboutUs {
   position: relative;
-  padding: 85px 0;
+  padding: 50px 0;
   background-repeat: no-repeat;
   background-position: 13% center;
   background-color: #F3F9FF;
@@ -134,7 +134,7 @@
 /* ============whyUs=========== */
 .whyUs {
   position: relative;
-  padding: 85px 0 0;
+  padding: 50px 0 0;
 }
 
 .rightItem p {
@@ -170,7 +170,7 @@
 /*==========universities======= */
 .universities {
   position: relative;
-  padding: 85px 0;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -202,7 +202,7 @@
 /*============guidence=========== */
 .guidence {
   position: relative;
-  padding: 85px 0;
+  padding: 50px 0;
   background-color: #F3F9FF;
 }
 
@@ -284,7 +284,7 @@
 }
 
 .whatWeOffer {
-  padding: 85px 0;
+  padding: 50px 0;
   position: relative;
 }
 
@@ -305,7 +305,7 @@
 
 .serviceWeProvide {
   position: relative;
-  padding: 85px 0 0;
+  padding: 50px 0 0;
   background-color: #f6f5ef78;
 }
 
@@ -404,7 +404,7 @@
 
 .serviceLeft .topSec {
   text-align: center;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 .shape{
   position: absolute;
@@ -414,14 +414,17 @@
   width: 400px;
     opacity: 0.4;
 }
-
+.bottomBtn{
+  text-align: center;
+  margin-top: 20px;
+}
 
 
 
 /* ================educational guidence============== */
 .educationalJourney {
   position: relative;
-  padding: 85px 0;
+  padding: 50px 0;
 }
 
 .journeyDetails p {
@@ -452,7 +455,7 @@
 /* =================educationalJourney================ */
 .guidenceForm {
   position: relative;
-  padding: 85PX 0 85px 0;
+  padding: 50px 0 50px 0;
 }
 
 .contactGraphicsOne {
@@ -526,7 +529,7 @@
 .studentSupport {
   position: relative;
   text-align: center;
-  padding: 85px 0;
+  padding: 50px 0;
 }
 
 .studentSupport .topSec {
@@ -536,7 +539,7 @@
 /* =============faq================== */
 .faq {
   position: relative;
-  padding: 85px 0;
+  padding: 50px 0;
   background: #f3f9ff;
 }
 

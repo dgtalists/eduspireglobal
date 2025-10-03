@@ -6,13 +6,15 @@ import Subtitle from "@/components/Subtitle/Subtitlle";
 import Heading from "@/components/Heading/Heading";
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa"; // npm install react-icons
-import { HiMinus, HiOutlineChevronRight } from "react-icons/hi2";
+import { HiMinus, HiOutlineChevronDoubleRight, HiOutlineChevronRight } from "react-icons/hi2";
 import { BsPlusLg } from "react-icons/bs";
 import Footer from "@/components/Footer/Footer";
 import HubspotEmbedForm from "@/components/HubspotEmbedForm/HubspotEmbedForm";
+import Link from "next/link";
+import Modal from "@/components/Modal/Modal";
 
 export default function WhyUK() {
-   
+    const [open, setOpen] = useState(false);
     return (
         <>
             <Head>
@@ -89,6 +91,10 @@ export default function WhyUK() {
                         </div>
                     </div>
                 </div>
+                <Modal isOpen={open} onClose={() => setOpen(false)}>
+                    <HubspotEmbedForm />
+                </Modal>
+
                 <div className={styles.eachItem} style={{ backgroundColor: "#FFEAD7" }}>
                     <div className="container">
                         <div className={`${"row align-items-center"} ${styles.row}`}>
@@ -104,6 +110,7 @@ export default function WhyUK() {
                                         and state boards are accepted alongside international
                                         curriculum like A levels and IB,
                                     </p>
+                                    <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
                                 </div>
                             </div>
                             <div className="col-lg-6">
@@ -125,6 +132,7 @@ export default function WhyUK() {
                                         programs are typically one year, saving both on tuition fees
                                         and living expenses.PHD programs span 3 years
                                     </p>
+                                    <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
                                 </div>
                             </div>
                             <div className="col-lg-6">
@@ -147,6 +155,7 @@ export default function WhyUK() {
                                         and gain ample exposure to the local culture and thought
                                         process.
                                     </p>
+                                    <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
                                 </div>
                             </div>
                             <div className="col-lg-6">
@@ -173,6 +182,7 @@ export default function WhyUK() {
                                         international work experience and exposure and thus empowers
                                         students to take assured steps towards a global future.
                                     </p>
+                                    <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
                                 </div>
                             </div>
                             <div className="col-lg-6">
@@ -256,7 +266,6 @@ export default function WhyUK() {
                     </section>
                 </div>
             </section>
-
 
             <Footer />
 

@@ -8,12 +8,15 @@ import Subtitle from "@/components/Subtitle/Subtitlle";
 import Heading from "@/components/Heading/Heading";
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa"; // npm install react-icons
-import { HiMinus } from "react-icons/hi2";
+import { HiMinus, HiOutlineChevronDoubleRight } from "react-icons/hi2";
 import { BsPlusLg } from "react-icons/bs";
 import Footer from "@/components/Footer/Footer";
 import HubspotEmbedForm from "@/components/HubspotEmbedForm/HubspotEmbedForm";
+import Modal from "@/components/Modal/Modal";
+import Link from "next/link";
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
   const colleges = [
     { img: "/images/lse.png", name: "LSE" },
     { img: "/images/kings.png", name: "king" },
@@ -129,20 +132,16 @@ export default function Home() {
       {/* =======banner======= */}
       <section
         className={styles.mainBanner}
+        style={{ backgroundImage: `url("/images/banner.jpg")` }}
       >
-        <div class={styles.bannerGraphics}>
-          <img src="/images/bg-graphics.png" alt="bg-graphics" />
-        </div>
-
         <div className="container">
-          <h1>
-            Expert Guidance for UK &
-            Ireland <span> University Admissions</span>
-          </h1>
           <div className={`row align-items-center ${styles.bannerRow}`}>
             <div className="col-lg-7 ">
               <div className={styles.bannerContent}>
-
+                <h1>
+                  Expert Guidance for UK &
+                  Ireland <span> University Admissions</span>
+                </h1>
                 <p>
                   At Eduspire Global, we specialise in helping aspiring students
                   successfully secure admissions at leading universities in the
@@ -154,13 +153,7 @@ export default function Home() {
                   decisions and embark on your international education with
                   confidence.
                 </p>
-                <p>
-                  Meet our British Council Certified Counsellors who will
-                  provide personalised Counselling sessions and Expert guidance
-                  for Admissions in U.K. and Ireland. Please book an appointment
-                  to avail the complimentary sessions.
-                </p>
-                <span>Call us for online appointment on 9147734848 </span>
+
                 <div className={styles.bannerButton}>
                   <CommonButton className={styles.headerBtn} text={"Start Your Application"} href="#" />
                   <CommonButton className={styles.headerBtn} text={"Speak to an Advisor"} href="#" />
@@ -170,6 +163,13 @@ export default function Home() {
             <div className="col-lg-5 ">
               <div className={styles.bannerRight}>
                 <img src="/images/bannerBg.jpg" alt="banner bg" />
+                <p>
+                  Meet our British Council Certified Counsellors who will
+                  provide personalised Counselling sessions and Expert guidance
+                  for Admissions in U.K. and Ireland. Please book an appointment
+                  to avail the complimentary sessions.
+                </p>
+                <span>Call us for online appointment on 9147734848 </span>
               </div>
             </div>
           </div>
@@ -209,6 +209,11 @@ export default function Home() {
                   students throughout the entire process of admission,
                   scholarship, accommodation, visa and pre-departure session.
                 </p>
+
+                <CommonButton className={styles.headerBtn} text={"Contact Us"} onClick={() => setOpen(true)} href="" />
+                <Modal isOpen={open} onClose={() => setOpen(false)}>
+                  <HubspotEmbedForm />
+                </Modal>
               </div>
             </div>
           </div>
@@ -262,6 +267,7 @@ export default function Home() {
                     and state boards are accepted alongside international
                     curriculum like A levels and IB,
                   </p>
+                  <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
                 </div>
               </div>
               <div className="col-lg-6">
@@ -283,6 +289,7 @@ export default function Home() {
                     programs are typically one year, saving both on tuition fees
                     and living expenses.PHD programs span 3 years
                   </p>
+                  <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
                 </div>
               </div>
               <div className="col-lg-6">
@@ -305,6 +312,7 @@ export default function Home() {
                     and gain ample exposure to the local culture and thought
                     process.
                   </p>
+                  <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
                 </div>
               </div>
               <div className="col-lg-6">
@@ -331,6 +339,7 @@ export default function Home() {
                     international work experience and exposure and thus empowers
                     students to take assured steps towards a global future.
                   </p>
+                  <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
                 </div>
               </div>
               <div className="col-lg-6">
@@ -341,6 +350,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
       </section>
 
       {/* =======partener====== */}
@@ -363,6 +373,9 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className={styles.bottomBtn}>
+            <CommonButton className={styles.headerBtn} text={"Get In Touch"} onClick={() => setOpen(true)} href="" />
           </div>
         </div>
       </section>
@@ -432,13 +445,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-         
+          <div className={styles.bottomBtn}>
+            <CommonButton className={styles.headerBtn} text={"Contact Us"} onClick={() => setOpen(true)} href="" />
+          </div>
         </div>
       </section>
 
       {/* ========what we offer=========== */}
       <section className={styles.whatWeOffer}>
-        <img className={styles.hatImg} src="/images/hat.png" alt="hat" />
+        {/* <img className={styles.hatImg} src="/images/hat.png" alt="hat" /> */}
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-7">
@@ -476,7 +491,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.serviceLeft}>
-            <img src="/images/54.png" className={styles.shape} />
+            {/* <img src="/images/54.png" className={styles.shape} /> */}
             <div className={styles.topSec}>
               <Subtitle text={"Our Service"} />
               <Heading
@@ -497,6 +512,9 @@ export default function Home() {
                   </div>
                 </div>
               ))}
+            </div>
+            <div className={styles.bottomBtn}>
+              <CommonButton className={styles.headerBtn} text={"Contact Us"} onClick={() => setOpen(true)} href="" />
             </div>
           </div>
         </div>
@@ -634,7 +652,9 @@ export default function Home() {
                   }
                 />
                 <p>At Eduspire Global, we specialise in guiding aspiring students through every stage of the university admission process in the UK and Ireland. Our expert team offers personalised assistance with course and university selection, ensuring that each student chooses the path best suited to their ambitions and interests. We provide comprehensive financial guidance, support with VISA applications, and advice on securing accommodation. From initial orientation to settling in, EduspireGlobal is committed to making your international education journey seamless and successful.</p>
+                <CommonButton className={styles.headerBtn} text={"Contact Us"} onClick={() => setOpen(true)} href="" />
               </div>
+
             </div>
           </div>
         </div>

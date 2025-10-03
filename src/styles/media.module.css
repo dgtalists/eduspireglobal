@@ -99,227 +99,57 @@
   width: 175px;
 }
 
-/* ===========about us========= */
-.aboutUs {
-  position: relative;
-  padding: 85px 0;
-  background-repeat: no-repeat;
-  background-position: 13% center;
-  background-color: #F3F9FF;
+/* ===========mediaSection========= */
+.mediaSection {
+  padding: 50px  0;
+  background: #fff;
 }
-
-.aboutImg {
-  position: relative;
-  width: 100%;
+.mediaSection .topSec{
+  text-align: center;
+  max-width: 800px;
+  margin:0 auto 30px;
 }
-
-.aboutImg img {
-  width: 100%;
-}
-
-.aboutContent {
-  padding-left: 50px;
-}
-
-.aboutContent p {
-  font-style: normal;
-  font-weight: 500;
+.mediaSection .topSec p{
   font-size: 18px;
-  line-height: 1.6em;
-  color: #414141;
-  margin: 0 0 10px 0;
-}
-
-
-/* ============whyUs=========== */
-.whyUs {
-  position: relative;
-  padding: 85px 0 0;
-}
-
-.rightItem p {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.eachItem {
-  position: relative;
-  padding: 30px 0;
-}
-
-.whyContent h4 {
-  font-size: 36px;
-  font-weight: 600;
+  font-weight: 400;
+  color: #121212;
   margin-bottom: 20px;
 }
-
-.whyContent p {
-  font-size: 18px;
-  font-weight: 500;
-}
-.whyContent a{
-  text-decoration: none;
-  color: #273474;
-  font-weight: 600;
-  font-size: 18px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-.eachImg {
-  text-align: center;
-}
-
-.eachItem:nth-child(even) .row {
-  flex-direction: row-reverse;
-}
-
-
-/*==========universities======= */
-.universities {
-  position: relative;
-  padding: 85px 0;
-  text-align: center;
-}
-
-.topSec {
-  position: relative;
-  padding-bottom: 30px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.topSec p {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.eachCollege {
+.mediaCard{
   position: relative;
   padding: 20px;
   border-radius: 20px;
-  border: #B1BAC4 1px solid;
-}
-
-.eachCollege img {
-  height: 60px;
-  width: auto;
-}
-
-
-/*============guidence=========== */
-.guidence {
-  position: relative;
-  padding: 85px 0;
-  background-color: #F3F9FF;
-}
-
-.guidence .topSec {
-  text-align: center;
-}
-
-.eachGuidence {
-  background: #FFF;
-  border: #BAC7D5 1px solid;
-  border-radius: 20px;
-  padding: 30px;
-  height: calc(100% - 20px);
-  margin-bottom: 20px;
-  transition: all 0.3s ease-in;
-}
-
-.icon {
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  margin: 0 0 24px;
-}
-
-.eachGuidence h4 {
-  color: #052515;
-  font-size: 28px;
-  font-weight: 700;
-  margin: 0 0 15px;
-}
-
-.eachGuidence p {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.6em;
-  color: #414141;
-  margin: 0;
-}
-
-.serviceArea {
-  position: relative;
-  text-align: center;
-  background-color: #368ede;
-  padding: 40px;
-  border-radius: 30px;
-  position: relative;
-}
-
-.serviceArea .serviceHeading {
-  text-align: center;
-  color: #fff;
-}
-
-.serviceArea p {
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-}
-
-.serviceArea ul {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  list-style: none;
-  gap: 15px;
-  padding: 0;
-  margin-top: 40px;
-}
-
-.serviceArea ul li {
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
   background: #fff;
-  padding: 12px 15px;
-  border-radius: 12px;
-  font-size: 18px;
-  font-weight: 500;
 }
-
-/* ================educational guidence============== */
-.educationalJourney {
-  position: relative;
-  padding: 85px 0;
+.mediaImg{
+  margin-bottom: 10px;
 }
-
-.journeyDetails p {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.journeyImg {
+.mediaCard img{
   width: 100%;
-  display: block;
+  border-radius: 20px;
+}
+.mediaContent h5 a{
+  text-decoration: none;
+  color: #121212;
+  font-size: 20px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.readMore{
+  text-decoration: none;
+  color: #121212;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.mediaContent h5 a:hover{
+  color: rgb(14, 77, 141);
 }
 
-.journeyImg img {
-  width: 100%;
-  border-radius: 12px;
-}
 
-.educationalJourney .row {
-  --bs-gutter-x: 50px;
-}
 
-.educationalJourney .row:nth-child(odd) {
-  flex-direction: row-reverse;
-  margin-bottom: 50px;
-}
+
 
 
 /* =================educationalJourney================ */
@@ -395,82 +225,8 @@
   margin-bottom: 8px;
 }
 
-/* ===================studentSupport======================= */
-.studentSupport {
-  position: relative;
-  text-align: center;
-  padding: 85px 0;
-}
 
-.studentSupport .topSec {
-  max-width: 100%;
-}
 
-/* =============faq================== */
-.faq {
-  position: relative;
-  padding: 85px 0;
-  background: #f3f9ff;
-}
-
-.faq .topSec {
-  text-align: center;
-}
-
-.accordWrap {
-  width: 100%;
-}
-
-.accordItem+.accordItem {
-  border-top: 1px solid #d4d4d4;
-}
-
-.accordHeader {
-  display: flex;
-  align-items: center;
-  column-gap: 200px;
-  padding: 30px 0 30px 180px;
-  cursor: pointer;
-  position: relative;
-}
-
-.accordNumber {
-  color: #052515;
-  font-size: 22px;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.accordTitle {
-  flex: 1;
-  font-size: 28px;
-  color: #052515;
-  font-weight: 600;
-  margin: 0;
-}
-
-.accordIcon {
-  margin-left: 12px;
-  color: #052515;
-  font-size: 22px;
-}
-
-.accordContent {
-  padding-left: 180px;
-  padding-bottom: 30px;
-}
-
-.accordContent p {
-  width: 100%;
-  max-width: 958px;
-  color: #414141;
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0;
-}
 
 @media (max-width: 768px) {
   .mainBanner {

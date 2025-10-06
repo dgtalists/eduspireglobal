@@ -232,6 +232,14 @@ const Header = () => {
                       Events
                     </Link>
                   </li>
+                  <li
+                    className={`${Styles.eachNav} ${router.pathname === "#" ? Styles.active : ""
+                      }`}
+                  >
+                    <Link href="#" className={Styles.eachNavMenu}>
+                      Contact
+                    </Link>
+                  </li>
 
                 </ul>
               </div>

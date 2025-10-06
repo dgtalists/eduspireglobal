@@ -98,7 +98,7 @@ export default function FinalGuidance() {
 
             {/* ========what we offer=========== */}
             <section className={styles.whatWeOffer}>
-                <img className={styles.hatImg} src="/images/hat.png" alt="hat" />
+                {/* <img className={styles.hatImg} src="/images/hat.png" alt="hat" /> */}
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-7">
@@ -131,7 +131,7 @@ export default function FinalGuidance() {
 
             <section className={styles.costs}>
                 <div className="container">
-                    <img src="/images/54.png" className={styles.shape} />
+                    {/* <img src="/images/54.png" className={styles.shape} /> */}
                     <div className={styles.topSec}>
                         <Subtitle text={"Costs"} />
                         <Heading

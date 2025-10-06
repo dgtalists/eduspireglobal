@@ -185,7 +185,7 @@ export default function Home() {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className={styles.aboutImg}>
-                <img src="/images/about-img.png" alt="about image" />
+                <img src="/images/about-img-revised.png" alt="about image" />
               </div>
             </div>
             <div className="col-lg-6">

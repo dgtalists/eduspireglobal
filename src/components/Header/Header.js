@@ -11,6 +11,7 @@ import CommonButton from "../CommonBtn/CommonBtn";
 import { HiOutlineEnvelope } from "react-icons/hi2";
 import { VscCallOutgoing } from "react-icons/vsc";
 import { FaFacebook, FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FiChevronDown } from "react-icons/fi";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -99,10 +100,10 @@ const Header = () => {
                   <a href="#" target="_blank" rel="noopener noreferrer">
                     <FaFacebookF />
                   </a>
-                  </li>
-                  <li><a href="#" target="_blank"><FaTwitter /></a></li>
-                  <li><a href="#" target="_blank"><FaLinkedinIn /></a></li>
-                  <li><a href="#" target="_blank"><FaInstagram /></a></li>
+                </li>
+                <li><a href="#" target="_blank"><FaTwitter /></a></li>
+                <li><a href="#" target="_blank"><FaLinkedinIn /></a></li>
+                <li><a href="#" target="_blank"><FaInstagram /></a></li>
               </ul>
             </div>
           </div>
@@ -187,7 +188,7 @@ const Header = () => {
                     onMouseEnter={() => !isMobile && setActiveMenu("financial-guidance")}
                     onMouseLeave={() => !isMobile && setActiveMenu(null)}
                   >
-                    <span
+                    <Link href="/financial-guidance"
                       className={`${Styles.eachNavMenu} ${Styles.dropdownToggle}`}
                       onClick={() =>
                         isMobile &&
@@ -197,7 +198,11 @@ const Header = () => {
                       }
                     >
                       Financial Guidance
-                    </span>
+                      <FiChevronDown
+                        className={`${Styles.chevronIcon} ${activeMenu === "financial-guidance" ? Styles.rotate : ""
+                          }`}
+                      />
+                    </Link>
 
                     {/* Submenu */}
                     {activeMenu === "financial-guidance" && (

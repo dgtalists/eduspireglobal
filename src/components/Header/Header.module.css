@@ -2,12 +2,14 @@
   background-color: #0e4d8d;
   padding: 10px 0;
 }
-.topHeaderWrap{
+
+.topHeaderWrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.topHeaderLeft ul{
+
+.topHeaderLeft ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -15,7 +17,8 @@
   margin-bottom: 0;
   padding: 0;
 }
-.topHeaderRight ul{
+
+.topHeaderRight ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -23,6 +26,7 @@
   margin-bottom: 0;
   padding: 0;
 }
+
 .topHeaderWrap a {
   color: #fff;
   font-size: 14px;
@@ -30,12 +34,14 @@
   text-decoration: none;
   font-weight: 600;
 }
+
 .topHeaderWrap svg {
   font-size: 18px;
   margin-right: 8px;
   color: #fff;
   vertical-align: middle;
 }
+
 .topMenu ul {
   list-style: none;
   justify-content: flex-end;
@@ -169,7 +175,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #0096cf;
+  background: #273474;
   color: #fff;
   border-radius: 5px;
   border: none;
@@ -178,6 +184,7 @@
 .eachNav {
   position: relative;
 }
+
 .eachNavMenu {
   text-decoration: none;
   color: #121212;
@@ -200,6 +207,22 @@
   font-size: 24px;
   cursor: pointer;
 }
+
+.dropdownToggle {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.chevronIcon {
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
 .subMenu {
   position: absolute;
   top: 100%;
@@ -208,24 +231,29 @@
   list-style: none;
   margin: 0;
   min-width: 200px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 999;
   padding: 0;
 }
 
-.subMenu li {
-  padding: 12px 20px;
-}
 
 .subMenu li a {
-  color: #121212;
   text-decoration: none;
+  color: #121212;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 12px 20px;
   display: block;
 }
 
 .subMenu li:hover {
   background: #273474;
 }
+
 .subMenu li:hover a {
   color: #fff;
 }
@@ -246,12 +274,36 @@
     align-items: flex-start;
   }
 
+  .subMenu li {
+    padding: 0;
+  }
+
+  .subMenu li a,
+  .nav span,
   .nav a {
     padding: 10px 12px;
     width: 100%;
     display: block;
     color: #fff;
     position: relative;
+    font-size: 12px;
+  }
+
+  .subMenu li a {
+    padding: 10px 18px;
+  }
+
+  .subMenu {
+    position: static;
+    box-shadow: none;
+    background: #b42126;
+    width: 100%;
+  }
+
+  .nav span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .nav {
@@ -336,6 +388,10 @@
 }
 
 @media (max-width: 768px) {
+  .topHeader {
+    display: none;
+  }
+
   .topBar {
     padding: 7px 0;
   }
@@ -344,7 +400,10 @@
     padding: 12px 0;
   }
 
-  
+  .mainLogo img {
+    width: 180px;
+  }
+
 
   .contactBtn {
     display: none;
@@ -359,7 +418,7 @@
     top: 0;
     right: -100%;
     padding: 70px 0 0;
-    background: #000;
+    background: #273474;
     display: block;
     -webkit-transition: all 0.8s ease-in-out;
     -moz-transition: all 0.8s ease-in-out;

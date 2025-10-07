@@ -211,7 +211,7 @@ const Header = () => {
                           <Link href="/financial-guidance/bank-loans">Bank Loans</Link>
                         </li>
                         <li>
-                          <Link href="/financial-guidance/scholarships">Scholarships</Link>
+                          <Link href="/scholarships">Scholarships</Link>
                         </li>
                       </ul>
                     )}

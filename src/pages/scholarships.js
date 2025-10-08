@@ -8,9 +8,11 @@ import Footer from "@/components/Footer/Footer";
 import HubspotEmbedForm from "@/components/HubspotEmbedForm/HubspotEmbedForm";
 import CommonButton from "@/components/CommonBtn/CommonBtn";
 import { PiStudentLight } from "react-icons/pi";
+import { useState } from "react";
+import Modal from "@/components/Modal/Modal";
 
 export default function ScholarShips() {
-
+    const [open, setOpen] = useState(false);
 
     return (
         <>
@@ -76,8 +78,7 @@ export default function ScholarShips() {
 
                                 </div>
                                 <div className={styles.bannerButton}>
-
-                                    <CommonButton className={styles.headerBtn} text={"Get Started"} href="#" />
+                                    <CommonButton className={styles.headerBtn} text={"Get Started"}  onClick={() => setOpen(true)} href="" />
                                 </div>
                             </div>
                         </div>
@@ -90,7 +91,9 @@ export default function ScholarShips() {
 
                 </div>
             </section>
-
+            <Modal isOpen={open} onClose={() => setOpen(false)}>
+                <HubspotEmbedForm />
+            </Modal>
             <section className={styles.costs}>
                 <div className="container">
                     <div className="row align-items-center">
@@ -129,6 +132,9 @@ export default function ScholarShips() {
                                         <p>Commonwealth scholarships.</p>
                                     </li>
                                 </ul>
+                                <div className={styles.bannerButton}>
+                                    <CommonButton className={styles.headerBtn} text={"Find out more details"} onClick={() => setOpen(true)} href="" />
+                                </div>
                             </div>
                         </div>
                     </div>

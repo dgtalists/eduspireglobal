@@ -3,13 +3,14 @@ import styles from "@/styles/scholarships.module.css";
 import Header from "@/components/Header/Header";
 import Subtitle from "@/components/Subtitle/Subtitlle";
 import Heading from "@/components/Heading/Heading";
-import {HiOutlineChevronRight } from "react-icons/hi2";
+import { HiOutlineChevronRight } from "react-icons/hi2";
 import Footer from "@/components/Footer/Footer";
 import HubspotEmbedForm from "@/components/HubspotEmbedForm/HubspotEmbedForm";
 import CommonButton from "@/components/CommonBtn/CommonBtn";
+import { PiStudentLight } from "react-icons/pi";
 
 export default function ScholarShips() {
-   
+
 
     return (
         <>
@@ -82,7 +83,7 @@ export default function ScholarShips() {
                         </div>
                         <div className="col-lg-5">
                             <div className={styles.whatWeRight}>
-                                <img className={styles.rightImg} src="/images/students-group.jpg" alt="hat" />
+                                <img className={styles.rightImg} src="/images/image-01.png" alt="hat" />
                             </div>
                         </div>
                     </div>
@@ -92,151 +93,101 @@ export default function ScholarShips() {
 
             <section className={styles.costs}>
                 <div className="container">
-                    {/* <img src="/images/54.png" className={styles.shape} /> */}
+                    <div className="row align-items-center">
+                        <div className="col-lg-6">
+                            <div className={styles.scolarLeft}>
+                                <img src="/images/choose-us-image-01.png" alt="cost" />
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div className={styles.scolarRight}>
+                                <div className={styles.topSec}>
+                                    <Subtitle text={"Financial aid"} />
+                                    <Heading
+                                        className={styles.serviceHeading}
+                                        mainText={"Empowering students through scholarships"}
+                                    />
+                                    <p>The UK government offers a range of prestigious scholarship programmes designed to support international students in funding their studies. These scholarships provide financial assistance for tuition fees, living expenses, and other study-related costs, helping talented students from around the world pursue their academic goals in the UK.  The UK government administers three principal scholarship programmes, namely:</p>
+
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div className={styles.iconCircle}>
+                                            <img src="/images/scholar.png" alt="great" />
+                                        </div>
+                                        <p>GREAT scholarships</p></li>
+                                    <li>
+                                        <div className={styles.iconCircle}>
+                                            <img src="/images/scholar.png" alt="great" />
+                                        </div>
+                                        <p>Chevening scholarships</p>
+                                    </li>
+                                    <li>
+                                        <div className={styles.iconCircle}>
+                                            <img src="/images/scholar.png" alt="great" />
+                                        </div>
+                                        <p>Commonwealth scholarships.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            {/* =======university scolarship========= */}
+            <section className={styles.universityScolarship}>
+                <div className="container">
                     <div className={styles.topSec}>
-                        <Subtitle text={"Financial aid"} />
+                        <Subtitle text={"University Scholarships"} />
                         <Heading
                             className={styles.serviceHeading}
-                            mainText={"Empowering students through scholarships"}
+                            mainText={"University Scholarships in the UK"}
                         />
-                        <p>The UK government offers a range of prestigious scholarship programmes designed to support international students in funding their studies. These scholarships provide financial assistance for tuition fees, living expenses, and other study-related costs, helping talented students from around the world pursue their academic goals in the UK.  The UK government administers three principal scholarship programmes, namely:</p>
+                        <p>Many UK universities offer their own scholarship programmes to attract talented international students. These scholarships can be merit-based, need-based, or specific to certain courses or fields of study. University scholarships often cover a portion of tuition fees and may also include living expenses.</p>
                     </div>
-                    <div className="row justify-content-center">
-                        <div className="col-lg-3">
+                    <div className="row">
+                        <div className="col-lg-3 col-md-6">
                             <div className={styles.socholarshipBox}>
-                                <div  className={styles.uniImg} >
-                                    <img src="/images/bc.png" />
+                                <div className={styles.eachIconWrap} style={{ backgroundColor: "#FFEAD7" }}>
+                                    <PiStudentLight />
                                 </div>
-                                <h5>GREAT scholarships</h5>                                
-                            </div>
-                        </div>    
-                        <div className="col-lg-3">
-                            <div className={styles.socholarshipBox}>
-                                <div  className={styles.uniImg} >
-                                    <img src="/images/chevening.png" />
-                                </div>
-                                <h5>chevening scholarships</h5>                                
-                            </div>
-                        </div>  
-                        <div className="col-lg-3">
-                            <div className={styles.socholarshipBox}>
-                                <div  className={styles.uniImg} >
-                                    <img src="/images/commonwealth.jpg" />
-                                </div>
-                                <h5>Commonwealth scholarships</h5>                                
-                            </div>
-                        </div>                     
-                    </div>
-                </div>
-            </section>
-
-            {/* =======why us========= */}
-            <section className={styles.whyUs}>
-
-                <div className={styles.eachItem} style={{ backgroundColor: "#FFEAD7" }}>
-                    <div className="container">
-                        <div className={`${"row align-items-center"} ${styles.row}`}>
-                            <div className="col-lg-6">
-                                <div className={styles.whyContent}>
-                                    <h4>Financial Planning Tips</h4>
-                                    <p>
-                                        A solid financial plan can help you navigate the expenses of studying abroad with confidence. Here’s how Eduspire Global supports you at every step:
-                                    </p>
-                                    <ul>
-                                        <li>Create a comprehensive budget covering tuition, accommodation, living costs, and additional expenses</li>
-                                        <li>Explore scholarships, grants, and bursaries offered by universities, governments, and private organizations</li>
-                                        <li>Understand loan options and work with banks or financial institutions to access education loans at competitive rates</li>
-                                        <li>Plan for currency fluctuations and additional hidden costs such as travel, deposits, and emergency funds</li>
-                                        <li>Track expenses with budgeting tools and maintain financial discipline throughout your stay abroad</li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className={styles.eachImg}>
-                                    <img src="/images/edi-img-4.png" />
-                                </div>
+                                <h5>Academic, Merit, and Excellence Scholarships</h5>
+                                <p>Granted to students with outstanding academic achievements and consistently high grades.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className={styles.eachItem} style={{ backgroundColor: "#D5F6E3" }}>
-                    <div className="container">
-                        <div className={`${"row align-items-center"} ${styles.row}`}>
-                            <div className="col-lg-6">
-                                <div className={styles.whyContent}>
-                                    <h4>Scholarships and Financial Aid</h4>
-                                    <p>
-                                        Many universities in the UK and Ireland offer scholarships based on merit, need, or specific fields of study. Government and international organizations also provide funding to help students reduce tuition and living costs.
-                                    </p>
-                                    <p>Our advisors will guide you through:</p>
-                                    <ul>
-                                        <li>Finding scholarships that fit your profile</li>
-                                        <li>Preparing strong applications for scholarships and grants</li>
-                                        <li>Meeting deadlines and submitting required documents</li>
-                                    </ul>
+                        <div className="col-lg-3 col-md-6">
+                            <div className={styles.socholarshipBox}>
+                                <div className={styles.eachIconWrap} style={{ backgroundColor: "#D5F6E3" }}>
+                                    <PiStudentLight />
                                 </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className={styles.eachImg}>
-                                    <img src="/images/edi-img-1.png" />
-                                </div>
+                                <h5>Performance-Based Scholarships</h5>
+                                <p>Designed for students who demonstrate exceptional talent in extracurricular fields such as sports, music, drama, or dance.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className={styles.eachItem} style={{ backgroundColor: "#E4E0FF" }}>
-                    <div className="container">
-                        <div className={`${"row align-items-center"} ${styles.row}`}>
-                            <div className="col-lg-6">
-                                <div className={styles.whyContent}>
-                                    <h4>Student Loans and Funding Support</h4>
-                                    <p>
-                                        Education loans are a viable option to finance your studies. We help you:
-                                    </p>
-                                    <ul>
-                                        <li>Compare loan providers and interest rates</li>
-                                        <li>Understand repayment terms</li>
-                                        <li>Prepare the necessary documentation for loan applications</li>
-                                    </ul>
-                                    <p>We work with trusted banks and financial partners to ensure you have access to reliable funding solutions.</p>
-
+                        <div className="col-lg-3 col-md-6">
+                            <div className={styles.socholarshipBox}>
+                                <div className={styles.eachIconWrap} style={{ backgroundColor: "#E4E0FF" }}>
+                                    <PiStudentLight />
                                 </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className={styles.eachImg}>
-                                    <img src="/images/edi-img-2.png" />
-                                </div>
+                                <h5>Subject-Specific Scholarships</h5>
+                                <p>Offered by individual departments to students pursuing studies in particular disciplines or fields of interest.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className={styles.eachItem} style={{ backgroundColor: "#FFD7D8" }}>
-                    <div className="container">
-                        <div className={`${"row align-items-center"} ${styles.row}`}>
-                            <div className="col-lg-6">
-                                <div className={styles.whyContent}>
-                                    <h4>Why Financial Planning Matters</h4>
-                                    <p>Proper planning allows you to:
-                                    </p>
-                                    <ul>
-                                        <li>Avoid last-minute surprises</li>
-                                        <li>Focus on studies rather than money worries</li>
-                                        <li>Make informed decisions about housing, lifestyle, and extracurricular activities</li>
-                                        <li>Build healthy financial habits for long-term success</li>
-                                    </ul>
-
+                        <div className="col-lg-3 col-md-6">
+                            <div className={styles.socholarshipBox}>
+                                <div className={styles.eachIconWrap} style={{ backgroundColor: "#FFF7CE" }}>
+                                    <PiStudentLight />
                                 </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className={styles.eachImg}>
-                                    <img src="/images/edi-img-3.png" />
-                                </div>
+                                <h5>Disability Scholarships</h5>
+                                <p>These scholarships are designed to support international students with disabilities, long-term mental health conditions, learning differences, or other specific accessibility needs.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             {/* ==============guidence Form============ */}
             <section className={styles.guidenceForm}>
                 <div className={styles.contactGraphicsOne}>

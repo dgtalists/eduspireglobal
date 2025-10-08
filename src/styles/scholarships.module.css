@@ -112,10 +112,11 @@
   /* background: #f3f9ff; */
 }
 
+.scolarLeft img {
+  width: 100%;
+}
+
 .socholarshipBox {
-  display: flex;
-  align-items: center;
-  gap: 20px;
   border: 1px solid #b1bac4;
   border-radius: 20px;
   padding: 20px;
@@ -123,15 +124,89 @@
   height: 100%;
 }
 
-.socholarshipBox .uniImg img {
-  width: 74px;
-  height:auto;
-}
-.socholarshipBox h5{
+
+
+.socholarshipBox h5 {
+  color: #414141;
+  margin-bottom: 10px;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.socholarshipBox p {
+  font-size: 16px;
+  font-weight: 500;
   margin: 0;
 }
+
+.costs .topSec p {
+  margin: 0;
+}
+
+.scolarRight ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.scolarRight ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.scolarRight ul li p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.iconCircle {
+  width: 50px;
+  height: 50px;
+  background-color: #e4e0ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.iconCircle img {
+  width: 32px;
+  height: 32px;
+}
+
+.eachIconWrap {
+  border-radius: 50%;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.eachIconWrap svg{
+  font-size: 30px;
+}
+.universityScolarship{
+  padding: 30px 0 40px;
+}
+.universityScolarship .topSec{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+
+
+
 /* ============whyUs=========== */
 .whyUs {
   position: relative;
@@ -179,7 +254,7 @@
   text-align: center;
 }
 
-.topSec {
+.universities .topSec {
   position: relative;
   padding-bottom: 10px;
   max-width: 900px;
@@ -189,6 +264,7 @@
 .topSec p {
   font-size: 18px;
   font-weight: 500;
+
 }
 
 .eachCollege {
@@ -295,10 +371,6 @@
 
 .whatWeRight {
   position: relative;
-  border-radius: 12px;
-  background: #fff;
-  border: 1px solid #bac7d5;
-  overflow: hidden;
 }
 
 .whatWeRight h5 {
@@ -421,8 +493,7 @@
 
 .costs .topSec {
   max-width: 100%;
-  text-align: center;
-  margin-bottom: 40px;
+  text-align: left;
 }
 
 

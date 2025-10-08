@@ -188,6 +188,86 @@ export default function ScholarShips() {
                 </div>
             </section>
 
+            {/* ==========indian students scholarship============== */}
+            <section className={styles.indianStudents}>
+                <div className="container">
+                    <div className={styles.topSec}>
+                        <div className="row align-items-center">
+                            <div className="col-lg-5">
+                                <div className={styles.topLeft}>
+                                    <Subtitle text={"Indian Students Scholarships"} />
+                                    <Heading
+                                        className={styles.serviceHeading}
+                                        mainText={"UK Scholarships for Indian Students – Undergraduate Level"}
+                                    />
+                                </div>
+                            </div>
+                            <div className="col-lg-7">
+                                <div className={styles.topRight}>
+                                    <p>Indian students aspiring to pursue undergraduate studies in the UK can access a wide range of scholarship opportunities. These scholarships are offered by UK universities, the government, and various private organisations to recognise academic excellence, leadership potential, and extracurricular achievements.</p>
+                                    <p>Some scholarships provide partial funding, covering a portion of tuition fees, while others offer full financial support, including tuition, living expenses, and travel costs.</p>
+                                    <p>Popular scholarships available for Indian undergraduate students include:</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row justify-content-center">
+                        <div className="col-lg-4 col-md-6">
+                            <div className={styles.socholarshipBox}>
+                                {/* <div className={styles.eachIconWrap} style={{ backgroundColor: "#FFEAD7" }}>
+                                    <PiStudentLight />
+                                </div> */}
+                                <h5>GREAT Scholarships</h5>
+                                <p>Offered in partnership between the UK government and participating universities.</p>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6">
+                            <div className={styles.socholarshipBox}>
+                                {/* <div className={styles.eachIconWrap} style={{ backgroundColor: "#D5F6E3" }}>
+                                    <PiStudentLight />
+                                </div> */}
+                                <h5>Commonwealth Scholarships</h5>
+                                <p>For students demonstrating outstanding academic merit and leadership potential.</p>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6">
+                            <div className={styles.socholarshipBox}>
+                                {/* <div className={styles.eachIconWrap} style={{ backgroundColor: "#E4E0FF" }}>
+                                    <PiStudentLight />
+                                </div> */}
+                                <h5>University-specific Scholarships</h5>
+                                <p>Many UK universities offer merit-based or subject-specific awards for international students from India.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            {/* =========internal scholarship============== */}
+            <section className={styles.internalScholarship}>
+                <div className="container">
+                    <div className={styles.topSec}>
+                        <div className="row align-items-center">
+                            <div className="col-lg-5">
+                                <div className={styles.topLeft}>
+                                    <Subtitle text={"Internal Scholarships"} />
+                                    <Heading
+                                        className={styles.serviceHeading}
+                                        mainText={"Merit-Based Internal Scholarships"}
+                                    />
+                                </div>
+                            </div>
+                            <div className="col-lg-7">
+                                <div className={styles.topRight}>
+                                    <p>Many UK universities offer internal scholarships that provide tuition fee waivers ranging from 10% to 50%, either university-wide or within specific departments. These awards are primarily granted based on academic excellence, performance, and potential. Almost every university in the UK extends some form of financial support to deserving international students.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* ==============guidence Form============ */}
             <section className={styles.guidenceForm}>
                 <div className={styles.contactGraphicsOne}>

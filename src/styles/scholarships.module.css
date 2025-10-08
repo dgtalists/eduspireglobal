@@ -105,6 +105,12 @@
   gap: 20;
 }
 
+/* ===========whatWeOffer================ */
+.whatWeOffer{
+  position: relative;
+  padding: 60px 0 30px;
+}
+
 /* ===========about us========= */
 .costs {
   position: relative;
@@ -196,7 +202,9 @@
   font-size: 30px;
 }
 .universityScolarship{
-  padding: 30px 0 40px;
+  padding: 50px 0 40px;
+  position: relative;
+  background-color: #fbfbfb;
 }
 .universityScolarship .topSec{
   text-align: center;
@@ -267,237 +275,28 @@
 
 }
 
-.eachCollege {
+/* ================indianStudents================ */
+
+.indianStudents{
   position: relative;
-  padding: 20px;
-  border-radius: 20px;
-  border: #B1BAC4 1px solid;
+  padding: 50px 0;
 }
-
-.eachCollege img {
-  height: 60px;
-  width: auto;
-}
-
-
-/*============guidence=========== */
-.guidence {
-  position: relative;
-  padding: 85px 0;
-  background-color: #F3F9FF;
-}
-
-.guidence .topSec {
-  text-align: center;
-}
-
-.eachGuidence {
-  background: #FFF;
-  border: #BAC7D5 1px solid;
-  border-radius: 20px;
-  padding: 30px;
-  height: calc(100% - 20px);
-  margin-bottom: 20px;
-  transition: all 0.3s ease-in;
-}
-
-.icon {
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  margin: 0 0 24px;
-}
-
-.eachGuidence h4 {
-  color: #052515;
-  font-size: 28px;
-  font-weight: 700;
-  margin: 0 0 15px;
-}
-
-.eachGuidence p {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.6em;
-  color: #414141;
-  margin: 0;
-}
-
-.serviceArea {
-  position: relative;
-  text-align: center;
-  background-color: #368ede;
-  padding: 40px;
-  border-radius: 30px;
-  position: relative;
-}
-
-.serviceArea .serviceHeading {
-  text-align: center;
-  color: #fff;
-}
-
-.serviceArea p {
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-}
-
-.serviceArea ul {
-  display: grid;
-  grid-template-columns: auto auto;
-  list-style: none;
-  gap: 15px;
-  padding: 0;
-  margin-top: 40px;
-}
-
-.serviceArea ul li {
-  background: #fff;
-  padding: 12px 15px;
-  border-radius: 12px;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.whatWeOffer {
-  padding: 55px 0;
-  position: relative;
-}
-
-.whatWeRight {
-  position: relative;
-  width: 100%;
-}
-
-.whatWeRight h5 {
-  font-size: 26px;
-  font-weight: 700;
-  color: #121212;
-  margin-bottom: 15px;
-}
-
-.serviceWeProvide {
-  position: relative;
-  padding: 85px 0 0;
-  background-color: #f6f5ef78;
-}
-
-.serviceLeft ul {
-  padding: 0;
-  display: grid;
-  grid-template-columns: auto;
-  gap: 15px;
-}
-
-.serviceLeft h5 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: #052515;
-}
-
-.serviceLeft ul li {
-  color: #414141;
-  /* margin: 0 0 22px; */
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 26px;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #fff;
-}
-
-.serviceIcon {
-  width: 70px;
-  height: 70px;
-  background: #f1f1f1;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 auto;
-}
-
-.serviceIcon img {
-  width: 40px;
-  height: 40px;
-}
-
-.serviceLeft ul li svg {
-  font-size: 30px;
-  width: 30px;
-  height: 30px;
-}
-
-.serviceLeft ul li:hover {
-  box-shadow: 0 0 10px 0;
-}
-
-.hatImg {
-  position: absolute;
-  left: 100%;
-  top: 0px;
-  margin-left: -105px;
-  width: 150px;
-}
-
-.rightImg {
-  width: 100%;
-}
-
-.serviceRight {
-  text-align: right;
-}
-
-.eachService {
-  background: #FFF;
-  border: #BAC7D5 1px solid;
-  border-radius: 20px;
-  padding: 30px;
-  height: calc(100% - 20px);
-  margin-bottom: 20px;
-  transition: all 0.3s ease-in;
-}
-
-.eachService h5 {
-  color: #414141;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1.6em;
-  margin: 0;
-}
-
-
-.serviceLeft .topSec {
-  text-align: center;
+.indianStudents .topSec{
   margin-bottom: 40px;
 }
 
-.shape {
-  position: absolute;
-  top: 0;
-  transform: translateX(-50%);
-  left: 0;
-  width: 400px;
-  opacity: 0.4;
+/* ==================internalScholarship==================== */
+.internalScholarship{
+  position: relative;
+  padding: 50px 0;
+  background: #fbfbfb;
 }
+
 
 .costs .topSec {
   max-width: 100%;
   text-align: left;
 }
-
-
 .costItem {
   position: relative;
   background: #FFF;
@@ -546,47 +345,6 @@
 .costItem .icon img {
   width: 40px;
   height: 40px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* ================educational guidence============== */
-.educationalJourney {
-  position: relative;
-  padding: 85px 0;
-}
-
-.journeyDetails p {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.journeyImg {
-  width: 100%;
-  display: block;
-}
-
-.journeyImg img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.educationalJourney .row {
-  --bs-gutter-x: 50px;
-}
-
-.educationalJourney .row:nth-child(odd) {
-  flex-direction: row-reverse;
-  margin-bottom: 50px;
 }
 
 
@@ -674,71 +432,7 @@
   max-width: 100%;
 }
 
-/* =============faq================== */
-.faq {
-  position: relative;
-  padding: 85px 0;
-  background: #f3f9ff;
-}
 
-.faq .topSec {
-  text-align: center;
-}
-
-.accordWrap {
-  width: 100%;
-}
-
-.accordItem+.accordItem {
-  border-top: 1px solid #d4d4d4;
-}
-
-.accordHeader {
-  display: flex;
-  align-items: center;
-  column-gap: 200px;
-  padding: 30px 0 30px 180px;
-  cursor: pointer;
-  position: relative;
-}
-
-.accordNumber {
-  color: #052515;
-  font-size: 22px;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.accordTitle {
-  flex: 1;
-  font-size: 28px;
-  color: #052515;
-  font-weight: 600;
-  margin: 0;
-}
-
-.accordIcon {
-  margin-left: 12px;
-  color: #052515;
-  font-size: 22px;
-}
-
-.accordContent {
-  padding-left: 180px;
-  padding-bottom: 30px;
-}
-
-.accordContent p {
-  width: 100%;
-  max-width: 958px;
-  color: #414141;
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0;
-}
 
 @media (max-width: 768px) {
   .mainBanner {

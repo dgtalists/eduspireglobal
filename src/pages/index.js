@@ -571,7 +571,7 @@ export default function Home() {
             </div>
             <div className="col-lg-6">
               <div className={styles.journeyImg}>
-                <img src="/images/support.jpg" />
+                <img src="/images/support_student.jpg" />
               </div>
             </div>
           </div>

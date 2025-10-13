@@ -476,4 +476,8 @@
   .topMenu ul li a {
     font-size: 12px;
   }
+  .chevronIcon{
+    position: absolute;
+    right: 10px;
+  }
 }

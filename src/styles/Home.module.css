@@ -721,6 +721,26 @@
     padding: 40px 0;
   }
 
+  .thumbStyleTwo {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+
+  .thumbStyleTwo img:first-child {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 0;
+  }
+
+  .thumbStyleTwo .shape {
+    display: none;
+  }
+
+  .thumbStyleTwo img:nth-child(2) {
+    margin: 0;
+    border-radius: 10px;
+    display: none;
+  }
   .contactWrap {
     padding: 20px;
     border-radius: 20px;

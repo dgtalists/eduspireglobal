@@ -102,7 +102,7 @@
 /* ===========about us========= */
 .aboutUs {
   position: relative;
-  padding: 85px 0;
+  padding: 55px 0 40px;
   background-repeat: no-repeat;
   background-position: 13% center;
   /* background-color: #F3F9FF; */
@@ -128,7 +128,7 @@
   max-width: 105%;
 }
 
-.thumbStyleTwo .shape img:first-child {
+.thumbStyleTwo .aboutshape img:first-child {
   border-radius: 0;
   position: absolute;
   left: 0;
@@ -138,7 +138,7 @@
   border: navajowhite;
 }
 
-.thumbStyleTwo .shape img:nth-child(2) {
+.thumbStyleTwo .aboutshape img:nth-child(2) {
   border: none;
   border-radius: 0;
   position: absolute;
@@ -163,7 +163,7 @@
 /* ==============ourStats=========== */
 .ourStats{
   position: relative;
-  padding: 80px 0;
+  padding: 40px 0;
   background: #fbfbfb;
 }
 .ourStats .topSec{
@@ -363,7 +363,7 @@
 /* =================educationalJourney================ */
 .guidenceForm {
   position: relative;
-  padding: 85px 0 85px 0;
+  padding: 40px 0 85px 0;
 }
 
 .contactGraphicsOne {
@@ -562,6 +562,7 @@
   }
 
   .aboutContent {
+    margin-top: 30px;
     padding-left: 0;
   }
 

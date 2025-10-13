@@ -66,7 +66,7 @@ export default function ScholarShips() {
                         <div className="col-lg-7">
                             <div className={styles.whatWeOfferLeft}>
                                 <div className={styles.topSec}>
-                                    <Subtitle text={"Scholarship Programmes"} />
+                                    {/* <Subtitle text={"Scholarship Programmes"} /> */}
                                     <Heading
                                         className={styles.serviceHeading}
                                         mainText={"UK Scholarship Programmes: Turning Academic Dreams into Reality"}
@@ -105,7 +105,7 @@ export default function ScholarShips() {
                         <div className="col-lg-6">
                             <div className={styles.scolarRight}>
                                 <div className={styles.topSec}>
-                                    <Subtitle text={"Financial aid"} />
+                                    {/* <Subtitle text={"Financial aid"} /> */}
                                     <Heading
                                         className={styles.serviceHeading}
                                         mainText={"Empowering students through scholarships"}
@@ -146,7 +146,7 @@ export default function ScholarShips() {
             <section className={styles.universityScolarship}>
                 <div className="container">
                     <div className={styles.topSec}>
-                        <Subtitle text={"University Scholarships"} />
+                        {/* <Subtitle text={"University Scholarships"} /> */}
                         <Heading
                             className={styles.serviceHeading}
                             mainText={"University Scholarships in the UK"}
@@ -201,7 +201,7 @@ export default function ScholarShips() {
                         <div className="row align-items-center">
                             <div className="col-lg-5">
                                 <div className={styles.topLeft}>
-                                    <Subtitle text={"Indian Students Scholarships"} />
+                                    {/* <Subtitle text={"Indian Students Scholarships"} /> */}
                                     <Heading
                                         className={styles.serviceHeading}
                                         mainText={"UK Scholarships for Indian Students – Undergraduate Level"}
@@ -257,7 +257,7 @@ export default function ScholarShips() {
                         <div className="row align-items-center">
                             <div className="col-lg-5">
                                 <div className={styles.topLeft}>
-                                    <Subtitle text={"Internal Scholarships"} />
+                                    {/* <Subtitle text={"Internal Scholarships"} /> */}
                                     <Heading
                                         className={styles.serviceHeading}
                                         mainText={"Merit-Based Internal Scholarships"}
@@ -287,7 +287,7 @@ export default function ScholarShips() {
                         <div className="row align-items-center">
                             <div className="col-lg-6">
                                 <div className={styles.topSec}>
-                                    <Subtitle text={"Future Build"} />
+                                    {/* <Subtitle text={"Future Build"} /> */}
                                     <Heading
                                         mainText={
                                             "Let’s Plan Your Future Together"

@@ -125,6 +125,14 @@
 .mediaImg{
   margin-bottom: 10px;
 }
+.mediaWrapper{
+  text-align: center;
+}
+.mediaWrapper img{
+  max-width: 100%;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
 .mediaCard img{
   width: 100%;
   border-radius: 20px;
@@ -155,7 +163,7 @@
 /* =================educationalJourney================ */
 .guidenceForm {
   position: relative;
-  padding: 85PX 0 85px 0;
+  padding: 0 0 85px 0;
 }
 
 .contactGraphicsOne {

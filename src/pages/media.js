@@ -63,11 +63,14 @@ export default function WhyUK() {
             <section className={styles.mediaSection}>
                 <div className="container">
                     <div className={styles.topSec}>
-                        <Subtitle text={"Media"} />
+                        {/* <Subtitle text={"Media"} /> */}
                         <Heading mainText={"In the Media"} />
                         <p>Explore our latest news, articles, and features in the media. Stay updated with EduspireGlobal's impact on education and student success stories.</p>
                     </div>
-                    <div className="row">
+                    <div className={styles.mediaWrapper}>
+                        <img src="/images/media.png" alt="media-bg" />
+                    </div>
+                    {/* <div className="row">
                         <div className="col-lg-4 col-md-6">
                             <div className={styles.mediaCard}>
                                 <div className={styles.mediaImg}>
@@ -80,7 +83,7 @@ export default function WhyUK() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
 
@@ -97,7 +100,7 @@ export default function WhyUK() {
                         <div className="row align-items-center">
                             <div className="col-lg-6">
                                 <div className={styles.topSec}>
-                                    <Subtitle text={"Personalised Guidance"} />
+                                    {/* <Subtitle text={"Personalised Guidance"} /> */}
                                     <Heading
                                         mainText={
                                             "Get Personalised Guidance for Your UK or Ireland University Journey"

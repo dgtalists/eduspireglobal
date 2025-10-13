@@ -65,7 +65,7 @@ export default function WhyUK() {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className={styles.leftHeading}>
-                                <Subtitle text={"Why Us"} />
+                                {/* <Subtitle text={"Why Us"} /> */}
                                 <Heading
                                     mainText={
                                         "The United Kingdom : a century long destination for Indian students"
@@ -110,7 +110,7 @@ export default function WhyUK() {
                                         and state boards are accepted alongside international
                                         curriculum like A levels and IB,
                                     </p>
-                                    <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
+                                    {/* <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link> */}
                                 </div>
                             </div>
                             <div className="col-lg-6">
@@ -132,7 +132,7 @@ export default function WhyUK() {
                                         programs are typically one year, saving both on tuition fees
                                         and living expenses.PHD programs span 3 years
                                     </p>
-                                    <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
+                                    {/* <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link> */}
                                 </div>
                             </div>
                             <div className="col-lg-6">
@@ -155,7 +155,7 @@ export default function WhyUK() {
                                         and gain ample exposure to the local culture and thought
                                         process.
                                     </p>
-                                    <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
+                                    {/* <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link> */}
                                 </div>
                             </div>
                             <div className="col-lg-6">
@@ -182,7 +182,7 @@ export default function WhyUK() {
                                         international work experience and exposure and thus empowers
                                         students to take assured steps towards a global future.
                                     </p>
-                                    <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
+                                    {/* <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link> */}
                                 </div>
                             </div>
                             <div className="col-lg-6">
@@ -208,7 +208,7 @@ export default function WhyUK() {
                         <div className="row align-items-center">
                             <div className="col-lg-6">
                                 <div className={styles.topSec}>
-                                    <Subtitle text={"Personalised Guidance"} />
+                                    {/* <Subtitle text={"Personalised Guidance"} /> */}
                                     <Heading
                                         mainText={
                                             "Get Personalised Guidance for Your UK or Ireland University Journey"

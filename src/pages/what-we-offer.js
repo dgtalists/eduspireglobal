@@ -123,7 +123,7 @@ export default function WhatWeOffer() {
             <div className="col-lg-7">
               <div className={styles.whatWeOfferLeft}>
                 <div className={styles.topSec}>
-                  <Subtitle text={"Our Service"} />
+                  {/* <Subtitle text={"Our Service"} /> */}
                   <Heading
                     className={styles.serviceHeading}
                     mainText={"Our service is recognised by  British Council"}
@@ -164,7 +164,7 @@ export default function WhatWeOffer() {
           <div className={styles.serviceLeft}>
             {/* <img src="/images/54.png" className={styles.shape} /> */}
             <div className={styles.topSec}>
-              <Subtitle text={"Our Service"} />
+              {/* <Subtitle text={"Our Service"} /> */}
               <Heading
                 className={styles.serviceHeading}
                 mainText={"How We Help"}
@@ -206,7 +206,7 @@ export default function WhatWeOffer() {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className={styles.topSec}>
-                  <Subtitle text={"Personalised Guidance"} />
+                  {/* <Subtitle text={"Personalised Guidance"} /> */}
                   <Heading
                     mainText={
                       "Get Personalised Guidance for Your UK or Ireland University Journey"

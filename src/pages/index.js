@@ -155,9 +155,12 @@ export default function Home() {
                 </p>
 
                 <div className={styles.bannerButton}>
-                  <CommonButton className={styles.headerBtn} text={"Start Your Application"} href="#" />
-                  <CommonButton className={styles.headerBtn} text={"Speak to an Advisor"} href="#" />
+                  <CommonButton className={styles.headerBtn} text={"Start Your Application"} onClick={() => setOpen(true)} href="" />
+                  <CommonButton className={styles.headerBtn} text={"Speak to an Advisor"} onClick={() => setOpen(true)} href="" />
                 </div>
+                <Modal isOpen={open} onClose={() => setOpen(false)}>
+                  <HubspotEmbedForm />
+                </Modal>
               </div>
             </div>
             <div className="col-lg-5 ">
@@ -179,18 +182,31 @@ export default function Home() {
       <section
         id="about"
         className={styles.aboutUs}
-        style={{ backgroundImage: `url("/images/about-bg.png")` }}
       >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <div className={styles.aboutImg}>
-                <img src="/images/about-img-revised.png" alt="about image" />
+              <div className={styles.thumbStyleTwo}>
+                <img
+                  className={`wow fadeInUp ${styles.image}`}
+                  src="/images/4.jpg"
+                  alt="Image Not Found"
+                />
+                <img
+                  className={`wow fadeInDown ${styles.image}`}
+                  data-wow-delay="200ms"
+                  src="/images/5.jpg"
+                  alt="Image Not Found"
+                />
+                <div className={styles.aboutshape}>
+                  <img src="/images/35.png" alt="Image Not Found" />
+                  <img src="/images/37.png" alt="Image Not Found" />
+                </div>
               </div>
             </div>
             <div className="col-lg-6">
               <div className={styles.aboutContent}>
-                <Subtitle text={"Who We Are"} />
+                {/* <Subtitle text={"Who We Are"} /> */}
                 <Heading mainText={"About Us"} />
                 <p>
                   Eduspire Global is a name that has generated trust among
@@ -209,11 +225,7 @@ export default function Home() {
                   students throughout the entire process of admission,
                   scholarship, accommodation, visa and pre-departure session.
                 </p>
-
                 <CommonButton className={styles.headerBtn} text={"Contact Us"} onClick={() => setOpen(true)} href="" />
-                <Modal isOpen={open} onClose={() => setOpen(false)}>
-                  <HubspotEmbedForm />
-                </Modal>
               </div>
             </div>
           </div>
@@ -226,7 +238,7 @@ export default function Home() {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className={styles.leftHeading}>
-                <Subtitle text={"Why Us"} />
+                {/* <Subtitle text={"Why Us"} /> */}
                 <Heading
                   mainText={
                     "The United Kingdom : a century long destination for Indian students"
@@ -267,7 +279,7 @@ export default function Home() {
                     and state boards are accepted alongside international
                     curriculum like A levels and IB,
                   </p>
-                  <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
+                  {/* <Link onClick={() => setOpen(true)} href="" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link> */}
                 </div>
               </div>
               <div className="col-lg-6">
@@ -289,7 +301,7 @@ export default function Home() {
                     programs are typically one year, saving both on tuition fees
                     and living expenses.PHD programs span 3 years
                   </p>
-                  <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
+                  {/* <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link> */}
                 </div>
               </div>
               <div className="col-lg-6">
@@ -312,7 +324,7 @@ export default function Home() {
                     and gain ample exposure to the local culture and thought
                     process.
                   </p>
-                  <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
+                  {/* <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link> */}
                 </div>
               </div>
               <div className="col-lg-6">
@@ -339,7 +351,7 @@ export default function Home() {
                     international work experience and exposure and thus empowers
                     students to take assured steps towards a global future.
                   </p>
-                  <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link>
+                  {/* <Link onClick={() => setOpen(true)} href="#!" className={styles.readMore}>Get Details <HiOutlineChevronDoubleRight /></Link> */}
                 </div>
               </div>
               <div className="col-lg-6">
@@ -357,7 +369,7 @@ export default function Home() {
       <section className={styles.universities}>
         <div className="container">
           <div className={styles.topSec}>
-            <Subtitle text={"Top Universities"} />
+            {/* <Subtitle text={"Top Universities"} /> */}
             <Heading mainText={"Some of the Universities We Represent"} />
             <p>
               Eduspire Global is dedicated to supporting aspiring students
@@ -384,7 +396,7 @@ export default function Home() {
       <section id="service" className={styles.guidence}>
         <div className="container">
           <div className={styles.topSec}>
-            <Subtitle text={"Our Guidance"} />
+            {/* <Subtitle text={"Our Guidance"} /> */}
             <Heading
               mainText={
                 "Expert Guidance for Your UK & Ireland University Journey"
@@ -459,7 +471,7 @@ export default function Home() {
             <div className="col-lg-7">
               <div className={styles.whatWeOfferLeft}>
                 <div className={styles.topSec}>
-                  <Subtitle text={"Our Service"} />
+                  {/* <Subtitle text={"Our Service"} /> */}
                   <Heading
                     className={styles.serviceHeading}
                     mainText={"Our service is recognised by  British Council"}
@@ -493,7 +505,7 @@ export default function Home() {
           <div className={styles.serviceLeft}>
             {/* <img src="/images/54.png" className={styles.shape} /> */}
             <div className={styles.topSec}>
-              <Subtitle text={"Our Service"} />
+              {/* <Subtitle text={"Our Service"} /> */}
               <Heading
                 className={styles.serviceHeading}
                 mainText={"How We Help"}
@@ -527,7 +539,7 @@ export default function Home() {
             <div className="col-lg-6">
               <div className={styles.journeyDetails}>
                 <div className={styles.topSec}>
-                  <Subtitle text={"Education Journey"} />
+                  {/* <Subtitle text={"Education Journey"} /> */}
                   <Heading
                     mainText={
                       "Empowering Your Global Education Journey"
@@ -547,7 +559,7 @@ export default function Home() {
             <div className="col-lg-6">
               <div className={styles.journeyDetails}>
                 <div className={styles.topSec}>
-                  <Subtitle text={"Our Support "} />
+                  {/* <Subtitle text={"Our Support "} /> */}
                   <Heading
                     mainText={
                       "Our Comprehensive Student Support Services"
@@ -580,7 +592,7 @@ export default function Home() {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className={styles.topSec}>
-                  <Subtitle text={"Personalised Guidance"} />
+                  {/* <Subtitle text={"Personalised Guidance"} /> */}
                   <Heading
                     mainText={
                       "Get Personalised Guidance for Your UK or Ireland University Journey"
@@ -645,7 +657,7 @@ export default function Home() {
           <div className="row justify-content-center">
             <div className="col-lg-10">
               <div className={styles.topSec}>
-                <Subtitle text={"Student Support"} />
+                {/* <Subtitle text={"Student Support"} /> */}
                 <Heading
                   mainText={
                     "Comprehensive Student Support for UK & Ireland University Admissions"
@@ -664,7 +676,7 @@ export default function Home() {
       <section className={styles.faq}>
         <div className="container">
           <div className={styles.topSec}>
-            <Subtitle text={"Quick Answer"} />
+            {/* <Subtitle text={"Quick Answer"} /> */}
             <Heading
               mainText={
                 "Frequently Asked Questions"

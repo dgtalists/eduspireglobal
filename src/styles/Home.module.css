@@ -61,7 +61,7 @@
   padding: 10px;
   max-width: 500px;
   margin-left: auto;
-  
+
 }
 
 .bannerRight img {
@@ -74,8 +74,9 @@
   color: #368ede;
   font-weight: 500;
   margin-bottom: 10px;
-  
+
 }
+
 .bannerRight span,
 .bannerRight p {
   font-size: 18px;
@@ -107,20 +108,51 @@
 /* ===========about us========= */
 .aboutUs {
   position: relative;
-  padding: 50px 0;
+  padding: 85px 0 40px;
   background-repeat: no-repeat;
   background-position: 13% center;
-  background-color: #F3F9FF;
+  /* background-color: #F3F9FF; */
 }
 
-.aboutImg {
+.thumbStyleTwo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   position: relative;
-  width: 100%;
+  z-index: 1;
 }
 
-.aboutImg img {
-  width: 100%;
+.thumbStyleTwo img:first-child {
+  border-radius: 200px 200px 30px 30px;
+  margin-top: 80px;
+  max-width: 130%;
+  border: 2px solid var(--white);
 }
+
+.thumbStyleTwo img:nth-child(2) {
+  border-radius: 30px 30px 200px 200px;
+  margin-left: -5%;
+  max-width: 105%;
+}
+
+.thumbStyleTwo .aboutshape img:first-child {
+  border-radius: 0;
+  position: absolute;
+  left: 0;
+  top: -80px;
+  z-index: -1;
+  opacity: 0.3;
+  border: navajowhite;
+}
+
+.thumbStyleTwo .aboutshape img:nth-child(2) {
+  border: none;
+  border-radius: 0;
+  position: absolute;
+  right: 60px;
+  bottom: 50px;
+  width: 100px;
+}
+
 
 .aboutContent {
   padding-left: 50px;
@@ -151,7 +183,8 @@
   position: relative;
   padding: 30px 0;
 }
-.whyContent a{
+
+.whyContent a {
   text-decoration: none;
   color: #273474;
   font-weight: 600;
@@ -160,6 +193,7 @@
   align-items: center;
   gap: 10px;
 }
+
 .whyContent h4 {
   font-size: 36px;
   font-weight: 600;
@@ -178,7 +212,8 @@
 .eachItem:nth-child(even) .row {
   flex-direction: row-reverse;
 }
-.bottomBtn{
+
+.bottomBtn {
   text-align: center;
   margin-top: 20px;
 }
@@ -275,10 +310,12 @@
   text-align: center;
   color: #fff;
 }
+
 .whatWeOffer {
   padding: 50px 0 0;
   position: relative;
 }
+
 .whatWeRight {
   position: relative;
   border-radius: 12px;
@@ -286,6 +323,7 @@
   border: 1px solid #bac7d5;
   overflow: hidden;
 }
+
 .serviceArea p {
   font-size: 18px;
   font-weight: 500;
@@ -308,6 +346,7 @@
   font-size: 18px;
   font-weight: 500;
 }
+
 .serviceLeft ul {
   padding: 0;
   display: grid;
@@ -348,9 +387,10 @@
   justify-content: center;
   flex: 0 0 auto;
 }
-.serviceIcon img{
+
+.serviceIcon img {
   width: 40px;
-  height:40px;
+  height: 40px;
 }
 
 .serviceLeft ul li svg {
@@ -405,14 +445,16 @@
   text-align: center;
   /* margin-bottom: 40px; */
 }
-.shape{
+
+.shape {
   position: absolute;
   top: 50%;
   transform: translateX(-50%);
   left: 0;
   width: 400px;
-    opacity: 0.4;
+  opacity: 0.4;
 }
+
 /* ================educational guidence============== */
 .educationalJourney {
   position: relative;
@@ -661,43 +703,55 @@
     width: 30px;
     height: 30px;
   }
-  .serviceArea{
+
+  .serviceArea {
     padding: 20px;
     text-align: left;
   }
-  .serviceArea .serviceHeading{
+
+  .serviceArea .serviceHeading {
     text-align: left;
   }
-  .serviceArea ul{
+
+  .serviceArea ul {
     grid-template-columns: auto;
   }
-  .educationalJourney{
+
+  .educationalJourney {
     padding: 40px 0;
   }
-  .contactWrap{
+
+  .contactWrap {
     padding: 20px;
     border-radius: 20px;
   }
-  .studentSupport{
+
+  .studentSupport {
     padding: 40px 0;
   }
-  .studentSupport .topSec{
+
+  .studentSupport .topSec {
     padding-bottom: 0;
   }
-  .faq{
+
+  .faq {
     padding: 40px 0;
   }
-  .accordHeader{
+
+  .accordHeader {
     padding: 20px 0 20px 50px;
     column-gap: 0;
   }
-  .accordTitle{
+
+  .accordTitle {
     font-size: 20px;
   }
-  .accordContent{
+
+  .accordContent {
     padding-left: 50px;
   }
-   .accordContent p{
+
+  .accordContent p {
     font-size: 16px;
-   }
+  }
 }

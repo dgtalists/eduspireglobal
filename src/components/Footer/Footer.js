@@ -27,7 +27,7 @@ export default function Footer() {
               <li><Link href="/about">About</Link></li>
               <li><Link href="/whyuk">Why UK</Link></li>
               <li><Link href="/what-we-offer">What We Offer</Link></li>
-              <li><Link href="/financial-guidance">Financial Guidance</Link></li>
+              <li><Link href="/scholarships">Scholarships</Link></li>
             </ul>
           </div>
 
@@ -35,8 +35,8 @@ export default function Footer() {
           <div className="col-lg-3 col-md-6 mb-4">
             <h5 className={styles.footerTitle}>Usefull Links</h5>
             <ul className={styles.footerList}>
-              <li><Link href="/#">Contact Us</Link></li>
-              <li><Link href="/#">FAQ</Link></li>
+              <li><Link href="/contact">Contact Us</Link></li>
+              {/* <li><Link href="/#">FAQ</Link></li> */}
               <li><Link href="/#">Privacy Policy</Link></li>
               <li><Link href="/#">Terms & Conditions</Link></li>
             </ul>
@@ -46,17 +46,13 @@ export default function Footer() {
           <div className="col-lg-3 col-md-6 mb-4">
             <h5 className={styles.footerTitle}>Contact Us</h5>
             <p>
-              Eduspire Global<br />
-              123 Education Street,<br />
-              London, UK
+             8/29, fern Road, Ballygunge, <br/>Kolkata - 700019
             </p>
             <p>Email: <Link href={'mailto:info@eduspireglobal.com'}>info@eduspireglobal.com</Link> </p>
             <p>Phone: <Link href={'tel:9147734848'}>9147734848</Link></p>
             <div className={styles.socialIcons}>
-              <a href="#"><FaFacebookF /></a>
-              <a href="#"><FaTwitter /></a>
-              <a href="#"><FaLinkedinIn /></a>
-              <a href="#"><FaInstagram /></a>
+              <Link target="_blank" href={"https://www.instagram.com/eduspire.global?igsh=MXdod3p2cXlkNnNvbg=="}><FaInstagram /></Link>
+              <Link target="_blank" href={"https://www.facebook.com/share/1FWprfsJN3/"}>< FaFacebookF/></Link>
             </div>
           </div>
         </div>

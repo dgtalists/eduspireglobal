@@ -104,7 +104,7 @@ export default function FinalGuidance() {
                         <div className="col-lg-7">
                             <div className={styles.whatWeOfferLeft}>
                                 <div className={styles.topSec}>
-                                    <Subtitle text={"Planning"} />
+                                    {/* <Subtitle text={"Planning"} /> */}
                                     <Heading
                                         className={styles.serviceHeading}
                                         mainText={"Cost and Financial Planning for Studying Abroad"}
@@ -133,7 +133,7 @@ export default function FinalGuidance() {
                 <div className="container">
                     {/* <img src="/images/54.png" className={styles.shape} /> */}
                     <div className={styles.topSec}>
-                        <Subtitle text={"Costs"} />
+                        {/* <Subtitle text={"Costs"} /> */}
                         <Heading
                             className={styles.serviceHeading}
                             mainText={"Understanding the Costs of Studying Abroad"}
@@ -341,7 +341,7 @@ export default function FinalGuidance() {
                         <div className="row align-items-center">
                             <div className="col-lg-6">
                                 <div className={styles.topSec}>
-                                    <Subtitle text={"Future Build"} />
+                                    {/* <Subtitle text={"Future Build"} /> */}
                                     <Heading
                                         mainText={
                                             "Let’s Plan Your Future Together"

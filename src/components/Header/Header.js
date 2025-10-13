@@ -96,14 +96,8 @@ const Header = () => {
             </div>
             <div className={Styles.topHeaderRight}>
               <ul>
-                <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <FaFacebookF />
-                  </a>
-                </li>
-                <li><a href="#" target="_blank"><FaTwitter /></a></li>
-                <li><a href="#" target="_blank"><FaLinkedinIn /></a></li>
-                <li><a href="#" target="_blank"><FaInstagram /></a></li>
+                <li><Link target="_blank" href={"https://www.instagram.com/eduspire.global?igsh=MXdod3p2cXlkNnNvbg=="}><FaInstagram /></Link></li>
+                <li><Link target="_blank" href={"https://www.facebook.com/share/1FWprfsJN3/"}>< FaFacebookF /></Link></li>
               </ul>
             </div>
           </div>
@@ -188,7 +182,7 @@ const Header = () => {
                     onMouseEnter={() => !isMobile && setActiveMenu("financial-guidance")}
                     onMouseLeave={() => !isMobile && setActiveMenu(null)}
                   >
-                    <Link href="/financial-guidance"
+                    <Link href="/#"
                       className={`${Styles.eachNavMenu} ${Styles.dropdownToggle}`}
                       onClick={() =>
                         isMobile &&
@@ -207,9 +201,9 @@ const Header = () => {
                     {/* Submenu */}
                     {activeMenu === "financial-guidance" && (
                       <ul ref={megaMenuRef} className={Styles.subMenu}>
-                        <li>
+                        {/* <li>
                           <Link href="/financial-guidance/bank-loans">Bank Loans</Link>
-                        </li>
+                        </li> */}
                         <li>
                           <Link href="/scholarships">Scholarships</Link>
                         </li>
@@ -224,19 +218,19 @@ const Header = () => {
                       Media
                     </Link>
                   </li>
-                  <li
+                  {/* <li
                     className={`${Styles.eachNav} ${router.pathname === "#" ? Styles.active : ""
                       }`}
                   >
                     <Link href="#" className={Styles.eachNavMenu}>
                       Events
                     </Link>
-                  </li>
+                  </li> */}
                   <li
                     className={`${Styles.eachNav} ${router.pathname === "#" ? Styles.active : ""
                       }`}
                   >
-                    <Link href="#" className={Styles.eachNavMenu}>
+                    <Link href="/contact" className={Styles.eachNavMenu}>
                       Contact
                     </Link>
                   </li>
